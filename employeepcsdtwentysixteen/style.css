@@ -1,0 +1,298 @@
+/*
+	Theme Name: Employee Provo City School District 2017
+	Author: District Web Team
+	Author URI: https://employee.provo.edu/technology/
+	Version: 1.2
+*/
+@import url("//globalassets.provo.edu/css/globalstyles-min.css?v=2.0.21");
+/*
+--------------------------------------------------------------------
+Fonts
+--------------------------------------------------------------------
+*/
+body,
+.content .slider .slide span,
+.sidebar
+{font-family:'Campton-light';}
+
+a,
+.nav-item > a,
+.sub-nav a,
+.menuHeading,
+#breadcrumbs,
+.sidebar h2, .sidebar h3,
+.sidebar ul li a
+{font-family:'Campton-medium';}
+
+h1,
+h2,
+h3,
+h4,
+h1 a,
+h2 a,
+h3 a,
+h4 a
+{font-family:'Montserrat',sans-serif;}
+/*
+-----------------------------------------------------------------------------------------------
+color changes for employee site
+-----------------------------------------------------------------------------------------------
+*/
+#mainHeader {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbe1e7+1,eff4f8+27,eff4f8+75,dbe1e7+100 */
+	background: #dce3e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #dfe6e2,#f6f9fb 50%,#f6f9fb 55%, #dfe6e2); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #dfe6e2,#f6f9fb 50%,#f6f9fb 55%, #dfe6e2);
+	/*Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #dfe6e2,#f6f9fb 50%,#f6f9fb 55%, #dfe6e2);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+#cludo-search-form .search-icon {
+	background: #0d4834;
+	background-image: url('//globalassets.provo.edu/image/icons/search-lt.svg');
+}
+#mainContent {
+	background-image: url('//globalassets.provo.edu/image/backgrounds/employee-pattern-bg.jpg');
+}
+.sidebar {
+	background-color: #0d4834;
+}
+#mainFooter {
+	background-color: #0d4834;
+}
+.content .slider .slide span {
+	background-color: rgba(202, 213, 206, 0.9);
+}
+.content .departmentResources .threeColumn:nth-child(odd) {
+	background-color: #cad5ce;
+}
+.postgrid article.post:nth-child(odd) {
+	background-color: #cad5ce;
+}
+.content .departmentResources .threeColumn:nth-child(even) {
+	background-color: #e4eae6;
+}
+.postgrid article.post:nth-child(even) {
+	background-color: #e4eae6;
+}
+.activePost .sub-nav-group {
+	background-color: #cad5ce;
+}
+h1, h2, h3, h4 {
+	color: #0d4834;
+}
+a {
+	color: #029060;
+}
+a h1, a h2, a h3, a h4, h1 a, h2 a, h3 a,h4 a {
+	color: #029060;
+}
+.nav-item > a {
+	color: #0d4834;
+}
+.sub-nav {
+	background-color: #0d4834;
+}
+ul.sub-nav-group li img {
+	background-color: #cad5ce;
+}
+/*
+-----------------------------------------------------------------------------------------------
+Home Page Customizations
+-----------------------------------------------------------------------------------------------
+*/
+.employee-home .currentContent {
+	height: 400px;
+	overflow: auto;
+}
+.employee-home .currentContent h2 {
+	margin-top: 0;
+}
+.employee-home .currentContent .wp-post-image{
+	width: 200px;
+	display: block;
+	float: right;
+	margin-left: 15px;
+}
+.employee-home .departmentResources {
+	margin-top: -8px;
+}
+.sidebar ul li img {
+	width: 25px;
+	height: 25px;
+}
+.employee-home .threeColumn {
+	min-height: 380px;
+}
+.sidebar h2 {margin-top: 30px;margin-bottom: 30px;}
+
+
+/*
+-----------------------------------------------------------------------------------------------
+Menu Customizations
+-----------------------------------------------------------------------------------------------
+*/
+.sub-nav {width: 330px;margin-left: 0;padding: 10px 20px 10px 20px;position: absolute;top:35px;}
+/*
+	was making the drop down on employee jump to the corner before it dispeared.
+	.sub-nav.open {width: 290px;margin-left: 0;padding: 10px 20px 10px 20px;position: absolute;top:35px;} */
+.sub-nav ul.sub-nav-group {width: 100%;}
+.sub-nav ul.sub-nav-group li {padding-bottom: 5px;padding-top: 5px;width: 100%;}
+.sub-nav ul.sub-nav-group li a {width: 75%;}
+/*
+-----------------------------------------------------------------------------------------------
+Headers
+-----------------------------------------------------------------------------------------------
+*/
+p#siteTitle {
+	position: absolute;
+	font-size: 1.5em;
+	left: 250px;
+	top: 50px;
+	font-family: 'Montserrat', sans-serif;
+	color: #0d4834;
+	font-weight: 600;
+}
+/*
+-----------------------------------------------------------------------------------------------
+Professional Development
+-----------------------------------------------------------------------------------------------
+*/
+.policystyle article .leaderbio {
+    display: none;
+    max-height: 180px;
+	overflow-y: scroll;
+}
+.policystyle article .leadername:hover .leaderbio {display: block;position: relative;float: left;border:1px solid #ccc;background:#fff;max-width: 450px;border-radius: 6px;color: #000;padding: 15px;margin-bottom:-500px;z-index: 100;}
+#apr {display: block;}
+.pdMenu {display: table;width: 100%;}
+.pdMenu .classInstructor {display: table-cell;width: 120px;float: left;margin-right:2%;}
+.pdMenu .classInfo {display: table-cell;width: calc(98% - 120px);float: left;}
+/*
+-----------------------------------------------------------------------------------------------
+Open Enrollment
+-----------------------------------------------------------------------------------------------
+*/
+video.openEnrollment {
+	max-width: 100%;
+	width: 600px;
+	margin-right: 20px;
+	float: left;
+}
+.openEnrollmentLinks li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.openEnrollmentLinks li span {
+	display: block;
+	font-size: 12px;
+}
+/*
+-----------------------------------------------------------------------------------------------
+livechat Styles
+-----------------------------------------------------------------------------------------------
+*/
+#wp-live-chat {
+	bottom: 95px !important;
+	left: 20px;
+}
+/*
+-----------------------------------------------------------------------------------------------
+Curriculum Notebooks
+-----------------------------------------------------------------------------------------------
+*/
+.accordian-category {
+	cursor: pointer;
+}
+.accordian-category:before {
+	display: inline-block;
+	background-repeat: no-repeat;
+	content: ' ';
+	background-image: url(https://globalassets.provo.edu/image/icons/accordion-down-green.svg);
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+.accordian-category.active:before{
+	background-image: url(https://globalassets.provo.edu/image/icons/accordion-up-green.svg);
+}
+.accordian-content {
+	display: none;
+}
+.accordian-content.active {
+	display: block;
+}
+/*
+-----------------------------------------------------------------------------------------------
+Professional Learning Offerings
+-----------------------------------------------------------------------------------------------
+*/
+.pd-offering {
+	padding: 15px 20px 20px 15px;
+}
+.pd-offering .offering-content {
+	width: calc(98% - 175px);
+	display: inline-block;
+}
+.pd-offering:nth-child(even) {
+	background-color:#dbe1e7;
+}
+.pd-offering:nth-child(odd) {
+	background-color:#f1f5f9;
+}
+.pd-offering .target-audience {
+	display: inline-block;
+	width: 175px;
+	vertical-align: top;
+}
+
+/*
+-----------------------------------------------------------------------------------------------
+Approved Applications
+-----------------------------------------------------------------------------------------------
+*/
+
+
+.approvedApps img {
+	display: block;
+	float: right;
+	margin: 10px 0 0 10px;
+	width: 100px;
+	max-height: 100px;
+}
+.approvedApps ul {
+	margin-left: 0;
+}
+.approvedApps ul li {
+	margin-left: 0;
+}
+
+/*
+-----------------------------------------------------------------------------------------------
+Responsive Styles
+-----------------------------------------------------------------------------------------------
+*/
+@media (max-width: 880px) {
+	#reveal-menu[type="checkbox"]:checked ~ #mainNav #mobileNav {
+		background-color: #0d4834;
+	}
+}
+@media (max-width: 617px) {
+	.employee-home .currentContent {
+		height: auto;
+		margin-top: 35px;
+	}
+	#mainHeader {
+		padding-top: 50px;
+	}
+	p#siteTitle {
+		top: 0;
+		left: 0;
+	}
+}
