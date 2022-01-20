@@ -35,6 +35,21 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 /*==========================================================================================
+// Favicon
+============================================================================================*/
+function pcsd_add_favicon(){ ?>
+	<!-- Custom Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="//globalassets.provo.edu/image/favicons/public/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="https://globalassets.provo.edu/image/favicons/public/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="https://globalassets.provo.edu/image/favicons/public/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="https://globalassets.provo.edu/image/favicons/public/manifest.json">
+		<link rel="mask-icon" href="https://globalassets.provo.edu/image/favicons/public/safari-pinned-tab.svg">
+	<?php }
+//add the favicon link to the live site head
+add_action('wp_head','pcsd_add_favicon');
+//add the favicon to the login page
+add_action('login_head','pcsd_add_favicon');
+/*==========================================================================================
 // custom Login Page
 ============================================================================================*/
 function my_custom_login() {
