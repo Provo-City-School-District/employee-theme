@@ -4,8 +4,9 @@
 	Author URI: https://employee.provo.edu/technology/
 	Version: 1.2
 */
-@import url("//globalassets.provo.edu/css/globalstyles-min.css?v=2.0.21");
+
 /*
+@import url("//globalassets.provo.edu/css/globalstyles-min.css?v=2.0.01");
 --------------------------------------------------------------------
 Fonts
 --------------------------------------------------------------------
@@ -295,4 +296,3 @@ Responsive Styles
 		top: 0;
 		left: 0;
 	}
-}
