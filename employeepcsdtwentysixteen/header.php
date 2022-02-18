@@ -9,7 +9,7 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-34304269-4');
 	</script>
-	
+
     <meta charset="utf-8" />
     <title><?php if (is_home() ) {?>News | <?php } ?><?php if (is_page() ) {the_title();?> | <?php } ?><?php if ( is_single() ) {the_title(); ?> | <?php } ?><?php bloginfo('name'); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
 	<?php
 	if (has_post_thumbnail()) {
 	?>
-	<meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />	
+	<meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />
 	<?php
 	} else {
 	?>

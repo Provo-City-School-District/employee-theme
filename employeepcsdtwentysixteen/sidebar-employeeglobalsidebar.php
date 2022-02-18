@@ -32,4 +32,4 @@
 			<li><img src="//globalassets.provo.edu/image/icons/policy.svg" alt="" /><a href="https://provo.edu/policies-procedures-forms/">Policies &amp; Procedures</a></li>
 			<li><img src="//globalassets.provo.edu/image/icons/teacher-resource-guide.svg" alt="" /><a href="https://employee.provo.edu/wp-content/uploads/2018/01/01042018-TeacherResourceGuide.pdf">Teacher Resource Guide</a></li>
 		</ul>
-</aside>			
+</aside>
