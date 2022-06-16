@@ -2,7 +2,6 @@
 	<h2>Employee Access</h2>
 		<ul>
 			<li><img src="//globalassets.provo.edu/image/icons/alio-lt.svg" alt="" /><a href="https://www.aliosolutions.net/PROVO/login.aspx">ALIO Employee Service Portal Login</a></li>
-		<!--	<li><img src="//globalassets.provo.edu/image/icons/16-hours-blended-learning.gif" alt="" /><a href="https://employee.provo.edu/teaching-learning/professional-development/16-hours-of-blended-learning-2021-22/">16 Hours of Blended Learning</a></li> -->
 			<li><img src="//globalassets.provo.edu/image/icons/news-white.svg" alt="" /><a href="https://employee.provo.edu/technology/approved-applications/">Approved Apps</a></li>
 			<li><img src="//globalassets.provo.edu/image/icons/employee-navigator-lt.svg" alt="" /><a href="https://www.employeenavigator.com/benefits/Account/Login">Benefits Enrollment Portal</a></li>
 			<li><img src="//globalassets.provo.edu/image/icons/email-lt.svg" alt="" /><a href="https://mail.google.com">Email Login</a></li>
