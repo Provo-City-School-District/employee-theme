@@ -8,7 +8,6 @@
    			<article class="activePost">
 
 				<?php
-					do_shortcode( '[modified-date]' );
 					if(have_posts()) :
 						while (have_posts()) : the_post();?>
 
