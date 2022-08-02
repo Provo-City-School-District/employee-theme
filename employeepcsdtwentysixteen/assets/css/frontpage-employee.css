@@ -1,14 +1,3 @@
-:root {
-	--green: #0e4734;
-	--white: #ffffff;
-	--black: #000;
-}
-
-
-
-
-
-
 .employee-home {
 	background-color: var(--white);
 	max-width: 100%;
@@ -24,19 +13,47 @@
 
 
 
+/* ==============================================================
+Section Above Tools Buttons */
+.tippytop {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.tippytop>p:nth-child(2) {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 110%;
+}
+
+.tippytop>p.email:before {
+	display: inline-block;
+	background-image: url('../icons/email-green.png');
+	content: '';
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+@media (min-width: 620px) {
+	.tippytop {
+		grid-template-columns: 1fr 1fr;
+		justify-items: unset;
+	}
+
+	.tippytop>p:nth-child(2) {
+		justify-self: end;
+	}
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
+/* ==============================================================
+Tools For Success Buttons */
 .successTools {
 	border-top: solid var(--green) 3px;
 	padding-top: 15px;
@@ -60,13 +77,20 @@
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	min-height: 45px;
 }
 
 .successTools ul li a {
 	color: var(--white);
 }
 
-/* success tool icons */
+
+
+
+
+
+/* ==============================================================
+success tool icons */
 .successTools li:before {
 	content: '';
 	background-size: contain;
@@ -105,13 +129,61 @@ li.helpdesk:before {
 
 
 
+/* ==============================================================
+News Highlights */
+.employeeHighlights ul {
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 1%;
+	list-style: none;
+}
+
+.employeeHighlights ul li {
+	margin: unset;
+}
+
+.employeeHighlights ul li a {
+	margin: 0;
+	padding: 5px max(5px, 1%) 5px max(5px, 1%);
+	border-radius: 3px;
+	list-style: none;
+	border: 2px solid var(--green);
+	text-align: center;
+	background: #dce3e8;
+	/* Older browsers */
+	background: linear-gradient(to bottom, #dfe6e2, #f6f9fb 50%, #f6f9fb 55%, #dfe6e2);
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	align-items: center;
+	color: var(--black);
+}
+
+.employeeHighlights ul li i {
+	display: inline-block;
+	background-size: contain;
+	padding: 30px;
+	margin-left: min(10px, 5%);
+}
+
+.employeeHighlights ul li .calendar {
+	background-image: url('../icons/calendar.png');
+}
+
+.employeeHighlights ul li .news {
+	background-image: url('../icons/megaphone.png');
+}
+
+.employeeHighlights ul li .notif {
+	background-image: url('../icons/email.png');
+}
 
 
 
 
-
-
-
+/* ==============================================================
+Teaser Links */
 .teasers {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -171,85 +243,13 @@ li.helpdesk:before {
 	margin: 20px;
 }
 
-@media (max-width: 1000px) {
-	.teasers {
-		font-size: 1.25em;
-	}
-}
-
-@media (max-width: 750px) {
-	.teasers {
-		font-size: 1em;
-	}
-}
 
 
 
 
 
-
-
-
-
-
-
-
-
-.employeeHighlights ul {
-	margin: 0;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 1%;
-	list-style: none;
-}
-.employeeHighlights ul li{margin:unset;}
-.employeeHighlights ul li a {
-	margin: 0;
-	padding: 5px max(5px, 1%) 5px max(5px, 1%);
-	border-radius: 3px;
-	list-style: none;
-	border: 2px solid var(--green);
-	text-align: center;
-	background: #dce3e8;
-	/* Older browsers */
-	background: linear-gradient(to bottom, #dfe6e2, #f6f9fb 50%, #f6f9fb 55%, #dfe6e2);
-	display: flex;
-	justify-content: center;
-	gap: 25px;
-	align-items: center;
-	color: var(--black);
-}
-
-.employeeHighlights ul li i {
-	display: inline-block;
-	background-size: contain;
-	padding: 30px;
-	margin-left: min(10px, 5%);
-}
-
-.employeeHighlights ul li .calendar {
-	background-image: url('../icons/calendar.png');
-}
-
-.employeeHighlights ul li .news {
-	background-image: url('../icons/megaphone.png');
-}
-
-.employeeHighlights ul li .notif {
-	background-image: url('../icons/email.png');
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==============================================================
+Employee Links Menu */
 .employeeLinks {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -278,14 +278,10 @@ li.helpdesk:before {
 
 
 
-@media (max-width: 780px) {
-	.employeeLinks h2 {
-		font-size: 1.3em;
-	}
-}
 
 
-
+/* ==============================================================
+Responsive Styles */
 
 
 @media (max-width: 1042px) {
@@ -295,16 +291,26 @@ li.helpdesk:before {
 	}
 }
 
-
-@media (max-width: 625px) {
-	#mainHeader .sociallinks{display: none;}
-	
+@media (max-width: 1000px) {
+	.teasers {
+		font-size: 1.25em;
+	}
 }
 
+@media (max-width: 780px) {
+	.employeeLinks h2 {
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 750px) {
+	.teasers {
+		font-size: 1em;
+	}
+}
 
 @media (max-width: 620px) {
-	p#siteTitle {left:20px!important;}
-	.districtLogo {top: 10px;}
+
 	.successTools ul {
 		grid-template-columns: repeat(3, 1fr);
 		row-gap: 1%;
@@ -322,68 +328,5 @@ li.helpdesk:before {
 
 	.employeeLinks {
 		grid-template-columns: 1fr;
-	}
-}
-@media (max-width: 465px) {
-	p#siteTitle {display:none;}
-	.districtLogo {top: 20px;width:30%;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tippytop {
-	display: grid;
-	justify-items: center;
-	align-items: center;
-}
-
-.tippytop>p:nth-child(2) {	
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	font-size: 110%;
-}
-
-.tippytop>p.email:before {
-	display: inline-block;
-	background-image: url('../icons/email-green.png');
-	content: '';
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 30px;
-	width: 30px;
-}
-
-@media (min-width: 620px) {
-	.tippytop {
-		grid-template-columns: 1fr 1fr;
-		justify-items: unset;
-	}
-	.tippytop>p:nth-child(2) {
-		justify-self: end;
 	}
 }

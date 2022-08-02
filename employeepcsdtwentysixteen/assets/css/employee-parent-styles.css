@@ -1,7 +1,8 @@
+
 /*
--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------
 CSS Reset
--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------
 */
 * {
 	margin:0;
@@ -37,6 +38,17 @@ iframe {
 /* Fix for Wordpress Admin Bar */
 body.admin-bar #mainHeader{top: 28px;} 
 /* body.admin-bar #wrapper{margin-top: 145px;} */
+
+/*
+--------------------------------------------------------------------
+Variables
+--------------------------------------------------------------------
+*/
+:root {
+	--green: #0e4734;
+	--white: #ffffff;
+	--black: #000;
+}
 /*
 --------------------------------------------------------------------
 Fonts
@@ -1836,6 +1848,14 @@ Responsive styles
 		width:94%;
 	}
 	*/
+	.sidebar{
+		position: unset;
+		width:unset;
+		margin-top:unset;
+	}
+	.content {
+		max-width: unset;
+	}
 }
 
 @media (max-width: 770px) {
@@ -1960,6 +1980,18 @@ Responsive styles
 	#nextLink,#prevLink {
 		height:100%!important;
 	}
+}
+
+
+@media (max-width: 620px) {
+	#mainHeader .sociallinks{display: none;}
+	p#siteTitle {left:20px!important;}
+	.districtLogo {top: 10px;}
+	.postgrid .post {width: unset;}
+}
+@media (max-width: 465px) {
+	p#siteTitle {display:none;}
+	.districtLogo {top: 20px;width:30%;}
 }
 @media (max-height: 400px) {
 	#mainHeader {
