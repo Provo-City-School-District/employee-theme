@@ -2,7 +2,7 @@
 	get_header();
 ?>
    <main id="mainContent">
-   		<section class="content postgrid">
+   		<section class="content postgrid newsBlog">
 	   		<h1>Employee News : <?php single_cat_title(); ?></h1>
 
 			<?php

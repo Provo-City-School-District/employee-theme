@@ -36,36 +36,38 @@
 	<link href="https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css" type="text/css" rel="stylesheet">
    </head>
   <body <?php body_class(); ?>>
-	  <header id="mainHeader">
-	   <p id="siteTitle"><?php bloginfo('name'); ?></p>
-	   <a href="<?php echo home_url(); ?>"><img src="https://globalassets.provo.edu/image/logos/pcsd-logo-website-header-x2.png" alt="Provo City School District Logo" class="districtLogo" /></a>
-	   		<ul class="sociallinks">
-						<li><a href="https://www.instagram.com/provocityschooldistrict/"><img src="https://globalassets.provo.edu/image/icons/employee-instagram-social-network-logo-of-photo-camera.svg" alt="Link to Instagram" /></span>
-							</a>
-						</li>
-						<li><a href="https://twitter.com/ProvoSchoolDist"><img src="https://globalassets.provo.edu/image/icons/employee-twitter-logo-on-black-background.svg" alt="Link to Twitter" /></span>
-							</a>
-						</li>
-						<li><a href="https://www.facebook.com/provoschooldistrict/"><img src="https://globalassets.provo.edu/image/icons/employee-facebook-app-logo.svg" alt="Link to Facebook" /></span>
-							</a>
-						</li>
-					</ul>
-	   		<form id="cludo-search-form" action="/" method="get" autocomplete="off"><!-- Search Form -->
-	   			<label for="s" class="visuallyhidden" id="websitesearch">Website Search: </label>
-	   			<input class="search-input" aria-labelledby="websitesearch" id="s" name="s" type="text" value="" placeholder="Search this website..." />
-	   			<input class="search-submit search-icon" type="submit" value="Search" />
-			</form> <!-- end Search Form -->
+	<header id="mainHeader">
+		<p id="siteTitle"><?php bloginfo('name'); ?></p>
+		<a href="<?php echo home_url(); ?>"><img src="https://globalassets.provo.edu/image/logos/pcsd-logo-website-header-x2.png" alt="Provo City School District Logo" class="districtLogo" /></a>
 
-			<ul class="contactinfo" itemscope itemtype="https://schema.org/PostalAddress"><!-- Contact Information -->
-				<li>Provo City School District</li>
-				<li><span itemprop="streetAddress">280 West 940 North</span></li>
-				<li><span itemprop="addressLocality">Provo</span>, <span itemprop="addressRegion">Utah</span> <span itemprop="postalCode">84604</span></li>
-				<li><span itemprop="telephone">(801) 374-4800</span></li>
-				<!-- <li><span itemprop="faxNumber">Fax: (801) 374-4808</span></li> -->
-			</ul><!-- End Contact Information -->
-		<input type="checkbox" id="reveal-menu" role="button">
-		<label class="mobileMenu" for="reveal-menu" onclick><img src="//globalassets.provo.edu/image/icons/hamburger-dk.svg" alt="" />Menu</label>
-	   <nav id="mainNav">
-		  <?php get_template_part( 'mainmenu'); ?>
-	   </nav>
-   </header><!-- end mainHeader -->
+		<ul class="sociallinks">
+			<li>
+				<a href="https://www.instagram.com/provocityschooldistrict/">
+					<img src="https://globalassets.provo.edu/image/icons/employee-instagram-social-network-logo-of-photo-camera.svg" alt="Link to Instagram" />
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/ProvoSchoolDist">
+					<img src="https://globalassets.provo.edu/image/icons/employee-twitter-logo-on-black-background.svg" alt="Link to Twitter" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/provoschooldistrict/">
+					<img src="https://globalassets.provo.edu/image/icons/employee-facebook-app-logo.svg" alt="Link to Facebook" />
+				</a>
+			</li>
+		</ul>
+		<form id="cludo-search-form" action="/" method="get" autocomplete="off"><!-- Search Form -->
+			<label for="s" class="visuallyhidden" id="websitesearch">Website Search: </label>
+			<input class="search-input" aria-labelledby="websitesearch" id="s" name="s" type="text" value="" placeholder="Search this website..." />
+			<input class="search-submit search-icon" type="submit" value="Search" />
+		</form> <!-- end Search Form -->
+
+		<ul class="contactinfo" itemscope itemtype="https://schema.org/PostalAddress"><!-- Contact Information -->
+			<li>Provo City School District</li>
+			<li><span itemprop="streetAddress">280 West 940 North</span></li>
+			<li><span itemprop="addressLocality">Provo</span>, <span itemprop="addressRegion">Utah</span> <span itemprop="postalCode">84604</span></li>
+			<li><span itemprop="telephone">(801) 374-4800</span></li>
+			<!-- <li><span itemprop="faxNumber">Fax: (801) 374-4808</span></li> -->
+		</ul><!-- End Contact Information -->
+	</header><!-- end mainHeader -->
