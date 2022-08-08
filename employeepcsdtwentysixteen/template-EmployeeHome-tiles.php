@@ -23,7 +23,7 @@
 		   </nav> <!-- end class succeedTools -->
 		   <section class="teasers">
 			   <?php
-					  $the_query = new WP_Query( array( 'posts_per_page' => 3 , 'cat'  => 'frontpage_highlights' ) );
+					  $the_query = new WP_Query( array( 'posts_per_page' => 3 , 'category_name'  => 'frontpage_highlights' ) );
 					  if($the_query->have_posts()) :
 						  while ($the_query->have_posts()) : $the_query->the_post();?>
 								 <a href="<?php the_permalink(); ?>"   style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
@@ -67,7 +67,7 @@
 						?>
 				</div>
 				<div>
-					<h2>Forms & Documents</h2>
+					<h2>Policies, Forms & Documents</h2>
 						<?php
 						   wp_nav_menu( array(
 							   'menu'           => '215', // Do not fall back to first non-empty menu.
