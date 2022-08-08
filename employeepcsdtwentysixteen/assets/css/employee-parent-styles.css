@@ -36,7 +36,12 @@ iframe {
 	display:none;
 }
 /* Fix for Wordpress Admin Bar */
+#wpadminbar {
+	top:0;
+	position:fixed;
+}
 body.admin-bar #mainHeader{top: 28px;} 
+body.admin-bar #mainContent{margin-top: 130px;} 
 /* body.admin-bar #wrapper{margin-top: 145px;} */
 
 /*
@@ -87,29 +92,39 @@ body {
 	line-height:1.375em;
 }
 #mainHeader {
-	background:#dce3e8;
+	/* background:#dce3e8;
 	background:-moz-linear-gradient(top,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
 	background:-webkit-linear-gradient(top,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
-	background:linear-gradient(to bottom,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
+	background:linear-gradient(to bottom,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8); */
 	padding:20px 20px 5px 30px;
 	position:fixed;
+	display: grid;
 	top:0;
 	left:0;
 	right:0;
-	height:107px;
+	min-height:107px;
 	box-shadow:0 3px 3px -2px #000;
-	-webkit-box-shadow:0 3px 3px -2px #000;
-	-moz-box-shadow:0 3px 3px -2px #000;
-	z-index:10000;
+	/* -webkit-box-shadow:0 3px 3px -2px #000; */
+	/* -moz-box-shadow:0 3px 3px -2px #000; */
+	z-index:1000;
 }
 #mainContent {
-	width:100%;
-	/* padding-top: 127px; */
-	margin-top:133px;
-	padding-bottom: 30px;
+	/* width:100%; */
 	background-image:url(//globalassets.provo.edu/image/backgrounds/contentarea-texture-dk.jpg);
 	background-repeat:repeat;
-	z-index:0;
+	z-index:900;
+	display: grid;
+	position: relative;
+	margin-top:130px;
+	margin-bottom:50px;
+	overflow:visible;
+	grid-template-columns: 1fr;
+}
+.content {
+	display: block;
+}
+#sidebar {
+	z-index:900;
 }
 #mainFooter {
 	background:#1c2f4a;
@@ -121,7 +136,7 @@ body {
 	position:fixed;
 	bottom:0;
 	left:0;
-	z-index:9001;
+	z-index:920;
 	
 	right:0;
 }
@@ -428,11 +443,11 @@ Content Area
 .content {
 	display:block;
 	/* position:absolute; */
-	margin-top: 133px;
+	/* margin-top: 133px; */
 	left:0;
 	top:0;
 	bottom:0;
-	max-width:calc(100% - 320px);
+	/* max-width:calc(100% - 320px); */
 	overflow-y:auto;
 	overflow-x:hidden;
 }
@@ -444,9 +459,9 @@ Content Area
 	display: block!important;
 	background-color: #21395a!important;
 }
-.newsBlog {
+/* .newsBlog {
 	margin-top:133px;
-}
+} */
 .page {
 	margin-top:133px;
 }
@@ -489,7 +504,7 @@ Post Grid
 --------------------------------------------------------------------
 */
 .postgrid h1 {
-	padding-left:5%;
+	/* padding-left:5%; */
 	width:100%;
 	background-color:#fff;
 	padding-top:10px;
@@ -500,14 +515,21 @@ Post Grid
 .postgrid .activePost h1 {
 	padding: 0;
 }
-.postgrid {
+
+.post {
+	padding:15px;
+}
+
+
+
+/* .postgrid {
 	display:flex;
 	flex-wrap:wrap;
-}
-.postgrid .post {
+} */
+/* .postgrid .post {
 	width:27.33%;
 	padding:20px 3%;
-}
+} */
 .postgrid .post:nth-child(even),.post div.postgrid:nth-child(even) {
 	background-color:#dbe1e7;
 }
@@ -578,13 +600,15 @@ Post Grid
 	display:block;
 	width:100%;
 }
+
+
 /*
 --------------------------------------------------------------------
 Single Post
 --------------------------------------------------------------------
 */
 .singlePost {
-	margin-top:133px;
+	/* margin-top:133px; */
 }
 .singlePost .activePost,.page .activePost {
 	background-color:#fff;
@@ -921,7 +945,7 @@ Sidebars
 	height:100%;
 	position:absolute;
 	right:0;
-	margin-top: 133px;
+	/* margin-top: 133px; */
 	top:0;
 	bottom:0;
 	padding:0 20px;
@@ -1981,14 +2005,36 @@ Responsive styles
 		height:100%!important;
 	}
 }
-
-
 @media (max-width: 620px) {
 	#mainHeader .sociallinks{display: none;}
 	p#siteTitle {left:20px!important;}
 	.districtLogo {top: 10px;}
 	.postgrid .post {width: unset;}
 }
+@media (min-width:600px) {
+	#mainContent {
+	/* padding-top: 127px; */
+	/* margin-top:unset; */
+	/* margin-bottom:45px; */
+	/* padding-bottom: 30px; */
+	/* position: fixed; */
+	/* margin-bottom:45px; */
+	/* overflow: scroll; */
+	/* top:133px; */
+	grid-template-columns: 1fr 320px;
+	}
+	.content {
+
+	}
+}
+@media (min-width:1000px) {
+	.postgrid {
+		display: grid;
+		grid-template-columns: repeat(3,minmax(30%,1fr));
+	}
+	.postgrid>h1{ grid-column: 1 / 4;}
+}
+
 @media (max-width: 465px) {
 	p#siteTitle {display:none;}
 	.districtLogo {top: 20px;width:30%;}

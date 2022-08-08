@@ -2,7 +2,7 @@
 	get_header();
 ?>
    <main id="mainContent">
-   		<section class="content postgrid newsBlog">
+   		<section class="content postgrid">
 	   		<h1>Employee News</h1>
 			<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

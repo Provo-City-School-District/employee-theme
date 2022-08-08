@@ -4,7 +4,7 @@
 */
 	get_header();
 ?>
-   <main id="mainContent">
+   <main id="mainContent" class="frontPage">
    		<h1 class="visuallyhidden">Employee Support Website</h1>
    		<section class="employee-home">
 		   <div class="tippytop">

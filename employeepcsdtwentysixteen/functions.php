@@ -4,29 +4,29 @@ Theme Setup
 ============================================================================================*/
 function pcsd_scripts_styles() {
 	/*   REGISTER ALL JS FOR SITE */
-	wp_register_script( 'slick_slider', 'https://globalassets.provo.edu/slick/slick.min.js', array('jquery'), '1.00.02', true);
+	wp_register_script( 'slick_slider', 'https://globalassets.provo.edu/slick/slick.min.js', array('jquery'), '1.00.04', true);
 	wp_register_script( '404easterEgg', 'https://globalassets.provo.edu/js/404.js', '', '1.0.01', true );
 	// wp_register_script( 'mega_menu', 'https://globalassets.provo.edu/js/jquery-accessibleMegaMenu.js', array('jquery'), '1.00.02', true);
-	wp_register_script( 'cookie_script', 'https://globalassets.provo.edu/js/cookie.js', array('jquery'), '', true);
-	wp_register_script( 'global_scripts', 'https://globalassets.provo.edu/js/scripts.js', array('jquery','slick_slider'), filemtime('https://globalassets.provo.edu/js/scripts.js'), true);
+	// wp_register_script( 'cookie_script', 'https://globalassets.provo.edu/js/cookie.js', array('jquery'), '', true);
+	// wp_register_script( 'global_scripts', 'https://globalassets.provo.edu/js/scripts.js', array('jquery','slick_slider'), filemtime('https://globalassets.provo.edu/js/scripts.js'), true);
 
 	/*   REGISTER ALL CSS FOR SITE */
 	/*   CALL ALL CSS AND SCRIPTS FOR SITE */
 
-	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.03', false);
-	wp_enqueue_style( 'style', get_stylesheet_uri(), array('parent_style'), '1.0.02', false);
-	wp_enqueue_script( 'theme_scripts',get_template_directory_uri() .'/assets/js/scripts.js', array() , '1.00.02', true);
+	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.04', false);
+	wp_enqueue_style( 'style', get_stylesheet_uri(), array('parent_style'), '1.00.04', false);
+	wp_enqueue_script( 'theme_scripts',get_template_directory_uri() .'/assets/js/scripts.js', array() , '1.00.04', true);
 	wp_enqueue_script( 'slick_slider');
 	//wp_enqueue_script( 'mega_menu');
 	//wp_enqueue_script( 'cookie_script');
-	wp_enqueue_script( 'global_scripts', 'https://globalassets.provo.edu/js/scripts.js', array('jquery','slick_slider'), '1.00.03', true);
+	wp_enqueue_script( 'global_scripts', 'https://globalassets.provo.edu/js/scripts.js', array('jquery','slick_slider'), '1.00.04', true);
 
 	if ( is_404() ) {
 		wp_enqueue_script( '404easterEgg');
 	}
 	//load front page specific style sheet
 	if ( is_front_page() ) {
-		wp_enqueue_style( 'front_page', get_template_directory_uri() . '/assets/css/frontpage-employee.css', array(),'1.00.03', false);
+		wp_enqueue_style( 'front_page', get_template_directory_uri() . '/assets/css/frontpage-employee.css', array(),'1.00.04', false);
 	}
 }
 add_action('wp_enqueue_scripts', 'pcsd_scripts_styles', 9999);
