@@ -816,45 +816,89 @@ Department main styles
 Office Directory styles
 --------------------------------------------------------------------
 */
-.directory .postgrid .staff-member-listing {
-	display:flex;
-	flex-wrap:wrap;
-	width:100%;
+.directory .postgrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	/* justify-items: stretch; */
+	/* text-align: center; */
+	/* justify-items: stretch; */
+	/* align-items: center; */
+	
 }
+.directory .postgrid img {
+	max-width: 120px;
+}
+.directory .postgrid ul,.directory .postgrid img {
+	display: table;
+	margin: 0 auto;
+}
+.directory .postgrid ul li{
+	margin: unset;
+
+}
+@media (min-width: 900px) {
+	.directory .postgrid {
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+@media (min-width: 1200px) {
+	.directory .postgrid {
+		grid-template-columns: repeat(5,1fr);
+	}
+}
+/* .directory .postgrid .staff-member-listing {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
 .directory .postgrid .post {
-	width:16%;
-	padding:20px 2%;
-	position:relative;
+	width: 16%;
+	padding: 20px 2%;
+	position: relative;
 }
+
 .directory .postgrid .post.hide {
-	display:none;
+	display: none;
 }
+
 .directory .postgrid .post img {
-	margin:0 auto;
-	display:block;
-	float:none;
+	margin: 0 auto;
+	display: block;
+	float: none;
 	width: 120px;
 	max-height: 150px;
 }
+
 .directory .postgrid .post ul {
-	margin-left:0;
-	margin-top:20px;
+	margin-left: 0;
+	margin-top: 20px;
 }
+
 .directory .postgrid .post ul li {
-	list-style:none;
-	margin:0;
-}
+	list-style: none;
+	margin: 0;
+} */
+
 .directory .personalvCard .title {
-	font-size:.7em;
-	font-style:italic;
-	line-height:15px;
+	font-size: .7em;
+	font-style: italic;
+	line-height: 15px;
 }
+
 .directory .personalvCard .name {
-	font-size:1em;
-	font-weight:700;
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-left: 25px;
+	list-style-position:inside;
+	list-style: none;
 }
-.directory .personalvCard ul li.phone,.directory .personalvCard ul li.email,.directory .personalvCard ul li.address,.directory .personalvCard ul li.schools {
-	font-size:.7em;
+
+.directory .personalvCard ul li.phone,
+.directory .personalvCard ul li.email,
+.directory .personalvCard ul li.address,
+.directory .personalvCard ul li.schools {
+	font-size: .7em;
 }
 .activePost #directorySearch,.activePost #filter,.activePost #directorySearchIcon {
 	display:none;
