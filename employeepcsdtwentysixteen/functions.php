@@ -13,7 +13,7 @@ function pcsd_scripts_styles() {
 	/*   REGISTER ALL CSS FOR SITE */
 	/*   CALL ALL CSS AND SCRIPTS FOR SITE */
 
-	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.04', false);
+	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.06', false);
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array('parent_style'), '1.00.04', false);
 	wp_enqueue_script( 'theme_scripts',get_template_directory_uri() .'/assets/js/scripts.js', array() , '1.00.04', true);
 	wp_enqueue_script( 'slick_slider');
