@@ -52,3 +52,24 @@ jQuery('.content ul li a').each(function(){
         jQuery(this).parent().addClass('ext');
     }
 });
+/*
+=============================================================================================================
+sort list alpha by giving it the class sortList
+=============================================================================================================
+*/
+jQuery(window).on("load", function() {
+	var elem = jQuery('.sortList'); //replace this with your list selector
+	sortList(elem);
+	function sortList($elem) {
+		var $li = $elem.find('li'),
+			$listLi = jQuery($li,$elem).get();
+		$listLi.sort(function(a, b){
+			var keyA = jQuery(a).text().toUpperCase();
+			var keyB = jQuery(b).text().toUpperCase();
+			return (keyA < keyB) ? -1 : 1;
+		});
+		jQuery.each($listLi, function(index, row){
+			$elem.append(row);
+		});
+	}
+});
