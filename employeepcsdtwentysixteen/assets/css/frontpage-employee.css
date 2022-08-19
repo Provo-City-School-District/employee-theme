@@ -1,6 +1,5 @@
-
 .frontPage {
-	grid-template-columns:unset!important;
+	grid-template-columns: unset !important;
 }
 
 
@@ -296,7 +295,7 @@ Responsive Styles */
 		display: none;
 		align-items: center;
 	}
-	
+
 }
 
 @media (max-width: 1000px) {

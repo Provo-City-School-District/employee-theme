@@ -706,7 +706,7 @@ Single Post
 	min-height: 400px;
 	padding: 20px;
 	width: calc(100% - 40px);
-	
+
 }
 
 .singlePost .activePost .featured-image-full {
@@ -958,29 +958,36 @@ Office Directory styles
 	/* text-align: center; */
 	/* justify-items: stretch; */
 	/* align-items: center; */
-	
+
 }
+
 .directory .postgrid img {
 	max-width: 120px;
 }
-.directory .postgrid ul,.directory .postgrid img {
+
+.directory .postgrid ul,
+.directory .postgrid img {
 	display: table;
 	margin: 0 auto;
 }
-.directory .postgrid ul li{
+
+.directory .postgrid ul li {
 	margin: unset;
 
 }
+
 @media (min-width: 900px) {
 	.directory .postgrid {
-		grid-template-columns: repeat(3,1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
 @media (min-width: 1200px) {
 	.directory .postgrid {
-		grid-template-columns: repeat(5,1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
+
 /* .directory .postgrid .staff-member-listing {
 	display: flex;
 	flex-wrap: wrap;
@@ -1025,7 +1032,7 @@ Office Directory styles
 	font-size: 1.2em;
 	font-weight: 700;
 	margin-left: 25px;
-	list-style-position:inside;
+	list-style-position: inside;
 	list-style: none;
 }
 
@@ -2578,8 +2585,79 @@ Arrows
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
+
 /* Fix for anchor links with fixed header */
 .jumper {
 	position: relative;
 	top: -135px;
+}
+
+
+
+
+
+
+
+@media (max-width:900px) {
+	#mainContent {
+		/* top: 30px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2023 Theme Updates */
+/* ================================================================================================ */
+/*
+--------------------------------------------------------------------
+Splash Pages
+--------------------------------------------------------------------
+*/
+article ul.imageList {
+	background-color: #cad5ce;
+	margin-left: unset;
+	padding: 5px 0 5px 0;
+}
+
+article ul.imageList img {
+	max-width: 45px;
+	margin-left: 15px;
+}
+
+article ul.imageList>li {
+	display: grid;
+	gap: 20px;
+	align-items: center;
+	grid-template-columns: 50px 1fr;
+}
+
+article ul.imageList ul {
+	margin-left: 80px;
+	flex-grow: 2;
+	grid-column: 1 / span 2;
 }
