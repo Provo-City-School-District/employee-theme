@@ -1613,7 +1613,7 @@ ul li a[href*="xls"]:after {
 }
 
 /*For adding icon into for in line links*/
-.content p a :not(.jumper):not(img):after {
+.content p a:not(.jumper):not(img):after {
 	content: ' ';
 	display: inline-block;
 	margin-left: 3px;
@@ -1623,11 +1623,11 @@ ul li a[href*="xls"]:after {
 	background-image: url(//globalassets.provo.edu/image/icons/external-link-gray.svg);
 }
 
-.content p a :not(img):after img {
+.content p a:not(img):after img {
 	background-image: none;
 }
 
-.content p a[href*="provo.edu"] :not(img):after {
+.content p a[href*="provo.edu"]:not(img):after {
 	/*	content:' ';
 	display:inline-block;
 
@@ -1638,11 +1638,11 @@ ul li a[href*="xls"]:after {
 	background-image: url(//globalassets.provo.edu/image/icons/file-blue.png);
 }
 
-.content p a[href*="provo.edu"] :not(img):after img {
+.content p a[href*="provo.edu"]:not(img):after img {
 	background-image: none;
 }
 
-.content p a[href*="pdf"] :not(img):after {
+.content p a[href*="pdf"]:not(img):after {
 	content: ' (PDF)';
 	display: inline-block;
 	background-image: none;
