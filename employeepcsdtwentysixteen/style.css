@@ -6,6 +6,20 @@
 */
 .blt, .sidebar ul.blt{list-style: disc;}
 .blt li, .sidebar ul.blt li {margin-left: 20px;}
+/* Big Red Button  WO95925 */
+.bigRedButton {
+	border: 1px solid black;
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	border-radius: 5px;
+	margin: 1em;
+	background-color: red;
+	color:white
+  }
+  .bigRedButton:hover {
+	background-color: purple;
+  }
 /*-----------------------------------------------------------------------------------------------
 Theme Specific coloring
 -----------------------------------------------------------------------------------------------*/
