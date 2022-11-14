@@ -1,32 +1,34 @@
 <?php
-	get_header();
+get_header();
 ?>
-     <main id="mainContent">
+<main id="mainContent">
 
-   		<section class="content page">
-   		<?php custom_breadcrumbs(); ?>
-   			<article class="activePost">
+	<section class="content page">
+		<?php custom_breadcrumbs(); ?>
+		<div class="postwrapper">
+			<article class="activePost">
 
 				<?php
-					if(have_posts()) :
-						while (have_posts()) : the_post();?>
+				if (have_posts()) :
+					while (have_posts()) : the_post(); ?>
 
-						   			<h1><?php the_title(); ?></h1>
-					   				<?php the_content(); ?>
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?>
 
-					   	<?php endwhile;
-							else :
-								echo '<p>No Content Found</p>';
-					endif;
+				<?php endwhile;
+				else :
+					echo '<p>No Content Found</p>';
+				endif;
 				?>
 				<div class="clear"></div>
-   			</article>
-   		</section>
-   		<?php
-	   		$sidebar = get_field('sidebar');
-	   		get_sidebar( $sidebar );
-	   	?>
-   </main>
+			</article>
+		</div>
+	</section>
+	<?php
+	$sidebar = get_field('sidebar');
+	get_sidebar($sidebar);
+	?>
+</main>
 <?php
-	get_footer();
+get_footer();
 ?>

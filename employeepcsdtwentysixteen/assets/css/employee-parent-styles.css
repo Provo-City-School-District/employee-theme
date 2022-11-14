@@ -211,6 +211,21 @@ body {
 	text-decoration:underline;
 }
 */
+
+/*
+--------------------------------------------------------------------
+Utility Classes
+--------------------------------------------------------------------
+*/
+.postwrapper {
+	
+	background-color: #fff;
+}
+.postwrapper .activePost {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 /*
 --------------------------------------------------------------------
 Main Header
