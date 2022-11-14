@@ -4,6 +4,8 @@
 	Author URI: https://employee.provo.edu/technology/
 	Version: 1.0.01
 */
+.blt, .sidebar ul.blt{list-style: disc;}
+.blt li, .sidebar ul.blt li {margin-left: 20px;}
 /*-----------------------------------------------------------------------------------------------
 Theme Specific coloring
 -----------------------------------------------------------------------------------------------*/
