@@ -1628,7 +1628,7 @@ ul li a[href*="xls"]:after {
 }
 
 /*For adding icon into for in line links*/
-.content p a:not(.jumper):not(img):after {
+.content p a:not(.jumper):not(.jumper):after {
 	content: ' ';
 	display: inline-block;
 	margin-left: 3px;
@@ -1642,7 +1642,7 @@ ul li a[href*="xls"]:after {
 	background-image: none;
 }
 
-.content p a[href*="provo.edu"]:not(img):after {
+.content p a[href*="provo.edu"]:not(.jumper):after{
 	/*	content:' ';
 	display:inline-block;
 
@@ -1653,22 +1653,24 @@ ul li a[href*="xls"]:after {
 	background-image: url(//globalassets.provo.edu/image/icons/file-blue.png);
 }
 
-.content p a[href*="provo.edu"]:not(img):after img {
+.content p a[href*="provo.edu"]:after img {
 	background-image: none;
 }
 
-.content p a[href*="pdf"]:not(img):after {
+.content p a[href*="pdf"]:not(.jumper):after {
 	content: ' (PDF)';
 	display: inline-block;
 	background-image: none;
 }
 
-.content p a[href*="xls"]:after {
+.content p a[href*="xls"]:not(.jumper):after {
 	content: ' (XLS)';
 	background-image: none;
 	display: inline-block;
 }
-
+.content p a:has(img):after, .content .grid2 a:has(img):after,.content p a.bigRedButton:after {
+  display: none!important;
+  }
 /* these are so that the listed links have a the right icon once the javascript gives them a class*/
 ul li.int {
 	list-style-image: url(//globalassets.provo.edu/image/icons/file-blue.png) !important;
@@ -2676,3 +2678,7 @@ article ul.imageList ul {
 	flex-grow: 2;
 	grid-column: 1 / span 2;
 }
+
+
+
+

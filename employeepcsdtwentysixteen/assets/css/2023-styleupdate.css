@@ -1,3 +1,8 @@
+:root {
+    --even-color: #e4eae6;
+    --odd-color: #cad5ce;
+
+  }
 .grid2 {
     display: grid;
     justify-items: center;
