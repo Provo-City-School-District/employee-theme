@@ -61,17 +61,18 @@ iframe {
 
 /* Fix for Wordpress Admin Bar */
 #wpadminbar {
-	top: 0;
+	top:unset;
+	bottom: 0;
 	position: fixed;
 }
 
-body.admin-bar #mainHeader {
+/* body.admin-bar #mainHeader {
 	top: 28px;
 }
 
 body.admin-bar #mainContent {
 	margin-top: 130px;
-}
+} */
 
 /* body.admin-bar #wrapper{margin-top: 145px;} */
 
@@ -2531,6 +2532,8 @@ Responsive styles
 	.postgrid {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(30%, 1fr));
+		max-width: 1550px;
+		margin: 0 auto;
 	}
 
 	.postgrid>h1 {
