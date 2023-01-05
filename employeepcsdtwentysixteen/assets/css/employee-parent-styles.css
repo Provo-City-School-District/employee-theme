@@ -225,6 +225,7 @@ Utility Classes
 .postwrapper .activePost {
 	max-width: 1000px;
 	margin: 0 auto;
+	height: 80vh;
 }
 
 /*
