@@ -61,7 +61,7 @@ iframe {
 
 /* Fix for Wordpress Admin Bar */
 #wpadminbar {
-	top:unset;
+	top: unset;
 	bottom: 0;
 	position: fixed;
 }
@@ -219,13 +219,15 @@ Utility Classes
 --------------------------------------------------------------------
 */
 .postwrapper {
-	
+
 	background-color: #fff;
+	margin-top: -10px;
 }
+
 .postwrapper .activePost {
 	max-width: 1000px;
 	margin: 0 auto;
-	height: 80vh;
+	min-height: 80vh;
 }
 
 /*
@@ -556,7 +558,7 @@ Breadcrumbs
 */
 #breadcrumbs {
 	font-size: .6em;
-	padding-top: 2px;
+	padding-top: 7px;
 	padding-bottom: 2px;
 	padding-left: 10px;
 	margin-top: 0;
@@ -717,12 +719,13 @@ Single Post
 	/* margin-top:133px; */
 }
 
-.singlePost .activePost,
-.page .activePost {
+.singlePost .activePost {
+	/* .page .activePost { */
 	background-color: #fff;
 	min-height: 400px;
 	padding: 20px;
 	width: calc(100% - 40px);
+	margin-top: 12px;
 
 }
 
@@ -1644,7 +1647,7 @@ ul li a[href*="xls"]:after {
 	background-image: none;
 }
 
-.content p a[href*="provo.edu"]:not(.jumper):after{
+.content p a[href*="provo.edu"]:not(.jumper):after {
 	/*	content:' ';
 	display:inline-block;
 
@@ -1670,9 +1673,13 @@ ul li a[href*="xls"]:after {
 	background-image: none;
 	display: inline-block;
 }
-.content p a:has(img):after, .content .grid2 a:has(img):after,.content p a.bigRedButton:after {
-  display: none!important;
-  }
+
+.content p a:has(img):after,
+.content .grid2 a:has(img):after,
+.content p a.bigRedButton:after {
+	display: none !important;
+}
+
 /* these are so that the listed links have a the right icon once the javascript gives them a class*/
 ul li.int {
 	list-style-image: url(//globalassets.provo.edu/image/icons/file-blue.png) !important;
@@ -2682,7 +2689,3 @@ article ul.imageList ul {
 	flex-grow: 2;
 	grid-column: 1 / span 2;
 }
-
-
-
-
