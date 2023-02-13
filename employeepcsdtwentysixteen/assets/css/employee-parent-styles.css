@@ -967,18 +967,67 @@ Department main styles
 	margin-left: -50%;
 }
 
-/*
---------------------------------------------------------------------
-Office Directory styles
---------------------------------------------------------------------
-*/
-.directory .postgrid {
+/* Directory Grid  */
+.directoryGrid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.directoryGrid>* {
+    padding: 1em 0;
+    width:100%;
+}
+@media (min-width:500px){
+    .directoryGrid>* {
+        width: calc(100% / 3);
+    }
+}
+@media (min-width:1000px){
+    .directoryGrid>* {
+        width: calc(100% / 5);
+    }
+}
+/* @media (min-width:1400px){
+    .directoryGrid>* {
+        width: calc(100% / 7);
+    }
+} */
+.directoryGrid>*:nth-child(even) {
+    background-color: var(--even-color);
+}
+
+.directoryGrid>*:nth-child(odd) {
+    background-color: var(--odd-color);
+}
+
+.directoryGrid .personalvCard img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 150px;
+}
+
+.directoryGrid .personalvCard ul {
+    list-style: none;
+}
+
+.directoryGrid .personalvCard ul li {
+    font-size: 0.7em;
+    margin: 0 !important;
+}
+
+.directoryGrid .personalvCard ul li.name {
+    font-size: 1em;
+}
+
+
+
+/* .directory .postgrid {
 	display: grid;
 	grid-template-columns: 1fr;
-	/* justify-items: stretch; */
-	/* text-align: center; */
-	/* justify-items: stretch; */
-	/* align-items: center; */
+
 
 }
 
@@ -1007,7 +1056,7 @@ Office Directory styles
 	.directory .postgrid {
 		grid-template-columns: repeat(5, 1fr);
 	}
-}
+} */
 
 /* .directory .postgrid .staff-member-listing {
 	display: flex;
@@ -1042,7 +1091,7 @@ Office Directory styles
 	list-style: none;
 	margin: 0;
 } */
-
+/* 
 .directory .personalvCard .title {
 	font-size: .7em;
 	font-style: italic;
@@ -1098,7 +1147,7 @@ Office Directory styles
 	width: 22px;
 	height: 22px;
 	margin-bottom: -7px;
-}
+} */
 
 /*
 --------------------------------------------------------------------

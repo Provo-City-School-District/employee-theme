@@ -1,6 +1,9 @@
 .frontPage {
 	grid-template-columns: unset !important;
 }
+#mainContent {
+	background:#fff;
+}
 
 
 

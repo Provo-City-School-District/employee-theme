@@ -16,8 +16,8 @@
 			<li><img src="//globalassets.provo.edu/image/icons/safeschool-lt.svg" alt="" /><a href="https://provo-ut.safeschools.com/login">SafeSchools</a></li>
 			<li><img src="//globalassets.provo.edu/image/icons/bus-lt.svg" alt="" /><a href="https://infofinderle.transfinder.com/provo.edu/login.aspx">Schedule a Bus</a></li>
 			<li><img src="//globalassets.provo.edu/image/icons/submit-news-lt.svg" alt="" /><a href="http://employee.provo.edu/employee-communications/news-submission-form/">Submit News</a></li>
-			<li><img src="//globalassets.provo.edu/image/icons/work-order-maintenance-lt.svg" alt="" /><a href="https://mwhd.provo.edu:8443/helpdesk/WebObjects/Helpdesk.woa">Work Order - Maintenance</a></li>
-			<li><img src="//globalassets.provo.edu/image/icons/work-order-tech-lt.svg" alt="" /><a href="https://helpdesk.provo.edu/helpdesk/WebObjects/Helpdesk.woa">Work Order - Technology</a></li>
+			<li><img src="//globalassets.provo.edu/image/icons/work-order-maintenance-lt.svg" alt="" /><a href="https://assetessentials.dudesolutions.com/provo">Submit Work Order - Maintenance</a></li>
+			<li><img src="//globalassets.provo.edu/image/icons/work-order-tech-lt.svg" alt="" /><a href="https://helpdesk.provo.edu/helpdesk/WebObjects/Helpdesk.woa">Submit Work Order - Technology</a></li>
 		</ul>
 	<h2>Calendars</h2>
 		<ul>

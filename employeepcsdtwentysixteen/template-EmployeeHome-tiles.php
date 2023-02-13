@@ -6,7 +6,8 @@
 ?>
    <main id="mainContent" class="frontPage">
    		<h1 class="visuallyhidden">Employee Support Website</h1>
-   		<section class="employee-home">
+   		<div class="siteContainer">
+		   <section class="employee-home">
 		   <div class="tippytop">
 		   <p><em>The tools you need to succeed at PCSD</em></p>
 			<p class="email"><a href="https://mail.google.com/">Email Login</a></p>
@@ -80,6 +81,7 @@
 
 
 		</section>
+		</div>
    </main>
 <?php
 	get_footer();

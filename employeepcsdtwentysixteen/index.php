@@ -2,8 +2,10 @@
 	get_header();
 ?>
    <main id="mainContent">
-   		<section class="content postgrid">
+   <div class="newsContainer">
+   <section class="content postgrid">
 	   		<h1>Employee News</h1>
+			  
 			<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$the_query = new WP_Query( array( 'posts_per_page' => 18 , 'category_name'  => 'employee-news' , 'post_type'  => 'post' , 'paged'  => $paged) );
@@ -35,6 +37,8 @@
 				endif;
 			?>
    		</section>
+   </div>
+   		
    		<?php get_sidebar( 'employeeNews' ); ?>
    </main>
 <?php
