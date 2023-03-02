@@ -60,17 +60,17 @@ iframe {
 }
 
 /* Fix for Wordpress Admin Bar */
-#wpadminbar {
+/* #wpadminbar {
 	top: unset;
 	bottom: 0;
 	position: fixed;
+} */
+
+body.admin-bar #mainHeader {
+	top: 30px;
 }
 
-/* body.admin-bar #mainHeader {
-	top: 28px;
-}
-
-body.admin-bar #mainContent {
+/* body.admin-bar #mainContent {
 	margin-top: 130px;
 } */
 
