@@ -29,17 +29,7 @@ Theme Specific coloring
 body {
 	background-image: url('//globalassets.provo.edu/image/backgrounds/employee-pattern-bg.jpg');
 }
-#mainHeader {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbe1e7+1,eff4f8+27,eff4f8+75,dbe1e7+100 */
-	background: #dce3e8;
-	/* Older browsers */
-	background: -moz-linear-gradient(top, #dfe6e2, #f6f9fb 50%, #f6f9fb 55%, #dfe6e2);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #dfe6e2, #f6f9fb 50%, #f6f9fb 55%, #dfe6e2);
-	/*Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #dfe6e2, #f6f9fb 50%, #f6f9fb 55%, #dfe6e2);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
+
 
 p#siteTitle {
 	position: absolute;

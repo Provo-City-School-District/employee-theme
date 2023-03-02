@@ -12,15 +12,19 @@ function pcsd_scripts_styles() {
 
 	/*   REGISTER ALL CSS FOR SITE */
 	/*   CALL ALL CSS AND SCRIPTS FOR SITE */
-
+	wp_enqueue_style('variables', get_template_directory_uri() . '/assets/css/variables.css', '', '1.0.0', false);
 	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.18', false);
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array('parent_style'), '1.00.08', false);
+	wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css', '', '1.0.03', false);
 	wp_enqueue_script( 'theme_scripts',get_template_directory_uri() .'/assets/js/scripts.js', array() , '1.00.06', true);
 	wp_enqueue_script( 'slick_slider');
+	
 	//wp_enqueue_script( 'mega_menu');
 	//wp_enqueue_script( 'cookie_script');
 	wp_enqueue_script( 'global_scripts', 'https://globalassets.provo.edu/js/scripts.js', array('jquery','slick_slider'), '1.00.06', true);
+	
 
+	
 	if ( is_404() ) {
 		wp_enqueue_script( '404easterEgg');
 	}
@@ -371,3 +375,13 @@ function my_plugin_unregister_my_patterns() {
 	  unregister_block_pattern_category('text');
   }
 add_action( 'init', 'my_plugin_unregister_my_patterns' );
+// adds class .active to top menu item if the current active page is the page in the menu 
+// so that we can style that differently.
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}

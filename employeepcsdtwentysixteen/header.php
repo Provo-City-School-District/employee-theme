@@ -36,38 +36,41 @@
 	<link href="https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css" type="text/css" rel="stylesheet">
    </head>
   <body <?php body_class(); ?>>
+  <a href="#mainContent" class="skip-nav-link">
+		skip navigation
+	</a>
 	<header id="mainHeader">
-		<p id="siteTitle"><?php bloginfo('name'); ?></p>
-		<a href="<?php echo home_url(); ?>"><img src="https://globalassets.provo.edu/image/logos/pcsd-logo-website-header-x2.png" alt="Provo City School District Logo" class="districtLogo" /></a>
 
-		<ul class="sociallinks">
-			<li>
-				<a href="https://www.instagram.com/provocityschooldistrict/">
-					<img src="https://globalassets.provo.edu/image/icons/employee-instagram-social-network-logo-of-photo-camera.svg" alt="Link to Instagram" />
-				</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/ProvoSchoolDist">
-					<img src="https://globalassets.provo.edu/image/icons/employee-twitter-logo-on-black-background.svg" alt="Link to Twitter" />
-				</a>
-			</li>
-			<li>
-				<a href="https://www.facebook.com/provoschooldistrict/">
-					<img src="https://globalassets.provo.edu/image/icons/employee-facebook-app-logo.svg" alt="Link to Facebook" />
-				</a>
-			</li>
-		</ul>
-		<form id="cludo-search-form" action="/" method="get" autocomplete="off"><!-- Search Form -->
-			<label for="s" class="visuallyhidden" id="websitesearch">Website Search: </label>
-			<input class="search-input" aria-labelledby="websitesearch" id="s" name="s" type="text" value="" placeholder="Search this website..." />
-			<input class="search-submit search-icon" type="submit" value="Search" />
-		</form> <!-- end Search Form -->
+		<div class="siteLogo griditem">
+			<a href="<?php echo home_url(); ?>">
+				<img alt="Provo City School District Home" class="websiteLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo/pcsd-logo-website-header-x2.png" />
+			</a>
 
-		<ul class="contactinfo" itemscope itemtype="https://schema.org/PostalAddress"><!-- Contact Information -->
-			<li>Provo City School District</li>
-			<li><span itemprop="streetAddress">280 West 940 North</span></li>
-			<li><span itemprop="addressLocality">Provo</span>, <span itemprop="addressRegion">Utah</span> <span itemprop="postalCode">84604</span></li>
-			<li><span itemprop="telephone">(801) 374-4800</span></li>
-			<!-- <li><span itemprop="faxNumber">Fax: (801) 374-4808</span></li> -->
-		</ul><!-- End Contact Information -->
+			<!-- <address>
+				<p class="headerContact">280 West 940 North Provo, Utah <span>801-374-4800</span></p>
+			</address> -->
+
+		</div>
+
+		<!-- <nav class="siteNav griditem"> -->
+		<nav id="navbar">
+			<!-- <a><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/dark/menu.png" alt=""> Menu</a> -->
+			<!-- <ul class="">
+				<li class="student"><a href="https://sandbox.provo.edu:8443/student-family-essentials/">Student Essentials</a></li>
+				<li class="employee"><a href="https://employee.provo.edu">Employee Essentials</a></li>
+				<li class="community"><a href="https://sandbox.provo.edu:8443/community-essentials/">Community Essentials</a></li>
+			</ul> -->
+			<?php wp_nav_menu(array('menu' => 'header-menu')); ?>
+
+		</nav>
+		<div class="siteSearch griditem">
+		<a href="https://provo.edu/search-results/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/dark/search-loupe.svg" width="25px"></a>
+		<!-- <a><img src="https://sandbox.provo.edu:8443/wp-content/themes/pcsdtwentysixteen/assets/icons/light/translation-light.png" width="25px"></a>	
+			 -->
+			<!-- <form id="cludo-search-form" role="search">
+				<input type="search" class="search-input" aria-label="Search" placeholder="Search This Website...">
+				<button type="submit" class="search-button" id="search-button">Search</button>
+			</form> -->
+		</div>
+
 	</header><!-- end mainHeader -->

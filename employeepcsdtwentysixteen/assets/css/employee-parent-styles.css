@@ -66,16 +66,18 @@ iframe {
 	position: fixed;
 } */
 
-body.admin-bar #mainHeader {
+/* body.admin-bar #mainHeader {
 	top: 30px;
-}
+} */
 
 /* body.admin-bar #mainContent {
 	margin-top: 130px;
 } */
 
 /* body.admin-bar #wrapper{margin-top: 145px;} */
-
+.grecaptcha-badge {
+	visibility: hidden;
+}
 /*
 --------------------------------------------------------------------
 Variables
@@ -135,17 +137,17 @@ body {
 	background:-moz-linear-gradient(top,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
 	background:-webkit-linear-gradient(top,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
 	background:linear-gradient(to bottom,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8); */
-	padding: 20px 20px 5px 30px;
-	position: fixed;
-	display: grid;
-	top: 0;
-	left: 0;
-	right: 0;
-	min-height: 107px;
-	box-shadow: 0 3px 3px -2px #000;
+	/* padding: 20px 20px 5px 30px; */
+	/* position: fixed; */
+	/* display: grid; */
+	/* top: 0; */
+	/* left: 0; */
+	/* right: 0; */
+	/* min-height: 107px; */
+	/* box-shadow: 0 3px 3px -2px #000; */
 	/* -webkit-box-shadow:0 3px 3px -2px #000; */
 	/* -moz-box-shadow:0 3px 3px -2px #000; */
-	z-index: 1000;
+	/* z-index: 1000; */
 }
 
 #mainContent {
@@ -155,12 +157,16 @@ body {
 	z-index: 900;
 	display: grid;
 	position: relative;
-	margin-top: 130px;
+	
 	margin-bottom: 50px;
 	overflow: visible;
 	grid-template-columns: 1fr;
 }
-
+@media (min-width: 800px){
+	#mainContent {
+		margin-top: 89px;
+	}
+}
 .content {
 	display: block;
 }
@@ -236,10 +242,8 @@ Utility Classes
 Main Header
 --------------------------------------------------------------------
 */
-.grecaptcha-badge {
-	visibility: hidden;
-}
 
+/* 
 .districtLogo {
 	position: absolute;
 	width: 205px;
@@ -278,20 +282,20 @@ Main Header
 	text-align: right;
 	margin-top: 40px;
 	color: #5c6571;
-}
+} */
 
 /* removed because we are making all of these lines the same size
 .contactinfo li:first-child {
 	font-size:10px;
 }
 */
-.contactinfo li {
+/* .contactinfo li {
 	list-style: none;
 	font-size: 10px;
 	margin: 0;
 	line-height: 1.3em;
 	text-transform: uppercase;
-}
+} */
 
 /*
 #mainHeader input[type=checkbox] {
@@ -300,7 +304,7 @@ Main Header
 	left:-9999px;
 }
 */
-#mainHeader .sociallinks {
+/* #mainHeader .sociallinks {
 	position: absolute;
 	right: 470px;
 	top: 19px;
@@ -317,7 +321,7 @@ Main Header
 
 #mainHeader .sociallinks li img {
 	width: 35px;
-}
+} */
 
 /*
 --------------------------------------------------------------------
@@ -2326,9 +2330,9 @@ Responsive styles
 		width: 200px;
 	}
 
-	#mainHeader .sociallinks {
+	/* #mainHeader .sociallinks {
 		right: 270px;
-	}
+	} */
 
 	/*
 	#reveal-menu[type=checkbox]:checked ~ #mainNav #mobileNav {
@@ -2402,11 +2406,11 @@ Responsive styles
 }
 
 @media (max-width: 770px) {
-	#mainHeader {
+	/* #mainHeader {
 		height: 68px;
 		max-width: 100%;
 		padding-left: 20px;
-	}
+	} */
 
 	p#siteTitle {
 		left: 190px !important;
@@ -2553,9 +2557,9 @@ Responsive styles
 }
 
 @media (max-width: 620px) {
-	#mainHeader .sociallinks {
+	/* #mainHeader .sociallinks {
 		display: none;
-	}
+	} */
 
 	p#siteTitle {
 		left: 20px !important;
@@ -2611,9 +2615,9 @@ Responsive styles
 }
 
 @media (max-height: 400px) {
-	#mainHeader {
+	/* #mainHeader {
 		position: relative;
-	}
+	} */
 
 	#mainContent {
 		margin-top: 0;
