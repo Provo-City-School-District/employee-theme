@@ -536,12 +536,13 @@ Content Area
 	display: block;
 	/* position:absolute; */
 	/* margin-top: 133px; */
-	left: 0;
-	top: 0;
-	bottom: 0;
+	/* left: 0; */
+	/* top: 0; */
+	/* bottom: 0; */
 	/* max-width:calc(100% - 320px); */
 	overflow-y: auto;
 	overflow-x: hidden;
+	padding-bottom:45px;
 }
 
 .wp-block-button {
@@ -1223,12 +1224,12 @@ Sidebars
 .sidebar {
 	display: block;
 	width: 280px;
-	height: 100%;
+	/* height: auto; */
 	position: absolute;
 	right: 0;
 	/* margin-top: 133px; */
 	top: 0;
-	bottom: 0;
+	bottom: 45px;
 	padding: 0 20px;
 	background-color: #21395a;
 	color: #dce2e8;
