@@ -3,11 +3,16 @@
 }
 #mainContent {
 	background:#fff;
-	margin-top: 110px;
+	
 }
 
-.admin-bar #mainContent {
-    margin-top: 110px;
+@media (min-width:800) {
+	#mainContent {
+		margin-top: 110px;
+	}
+	/* .admin-bar #mainContent {
+		margin-top: 142px;
+	} */
 }
 
 

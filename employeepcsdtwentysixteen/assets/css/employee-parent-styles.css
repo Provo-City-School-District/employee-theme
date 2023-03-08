@@ -164,7 +164,12 @@ body {
 }
 @media (min-width: 800px){
 	#mainContent {
-		margin-top: 89px;
+		margin-top: 115px;
+	}
+}
+@media (min-width: 1100px){
+	#mainContent {
+		margin-top: 110px;
 	}
 }
 .content {
@@ -2071,7 +2076,9 @@ accordion styles .accordion as the control and a div beneath as the panel
 	content: "\2796";
 	/* Unicode character for "minus" sign (-) */
 }
-
+#mainHeader .active:after {
+	content: unset;
+}
 /* Style the accordion panel. Note: hidden by default */
 .panel {
 	max-height: 0;
@@ -2769,3 +2776,24 @@ blockquote {
 	display: inline;
 	font-style: italic;
   }
+
+
+
+
+
+  /* Skip nav link */
+.skip-nav-link {
+    position: absolute;
+    transform: translateY(-300%);
+    padding: 1em;
+    top: -200px;
+    transition: transform 300ms ease-in;
+}
+
+.skip-nav-link:focus {
+    transform: translateY(-165%);
+    z-index: 10001;
+    border: none;
+    top: 0px;
+	position: static;
+}

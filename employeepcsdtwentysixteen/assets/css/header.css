@@ -154,7 +154,11 @@ Cludo Search
     top: 100px;
     max-width: 350px;
 } */
-
+/* @media (min-width: 800px) {
+    .admin-bar #mainContent {
+        margin-top: 70px;
+    }
+} */
 @media (min-width: 800px) {
     #mainHeader {
         grid-template-columns: minmax(350px, 450px) 1fr 100px;
@@ -167,7 +171,8 @@ Cludo Search
         top: 32px;
     }
     .admin-bar #mainContent {
-        margin-top: 89px;
+        margin-top: 70px;
+        top:50px;
     }
     .admin-bar .alerts {
         margin-top: 125px;
@@ -229,5 +234,8 @@ Cludo Search
     }
     #navbar ul {
         padding-right: unset;
+    }
+    .admin-bar #mainContent {
+        margin-top: 60px;
     }
 }
