@@ -20,7 +20,7 @@
 	background-color: var(--white);
 	max-width: 100%;
 	padding: 0;
-	/* padding-top: 20px; */
+	padding-top: 20px;
 	padding-right: min(32px, 5%);
 	padding-left: min(32px, 5%);
 	position: relative;
