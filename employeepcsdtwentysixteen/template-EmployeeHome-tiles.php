@@ -28,7 +28,7 @@
 					  $the_query = new WP_Query( array( 'posts_per_page' => 3 , 'category_name'  => 'frontpage_highlights' ) );
 					  if($the_query->have_posts()) :
 						  while ($the_query->have_posts()) : $the_query->the_post();?>
-								 <a href="<?php the_permalink(); ?>"   style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+								 <a href="<?php the_permalink(); ?>"   style="background-image: url(<?php if (get_field('featured_image', $post_id)) { echo get_field('featured_image');} elseif (has_post_thumbnail()) { the_post_thumbnail_url(); } ?>)">
 								 	<article>
 									    <p><?php  the_title();  ?></p>
 										<i class="arrow"></i>
