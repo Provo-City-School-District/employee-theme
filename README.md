@@ -1,5 +1,5 @@
 # Provo City School District Employee Website Theme
-Website: https://employee.provo.edu
+Website: https://employee.provo.edu<br>
 Version: 1.2
 Contributors: Rob Francom, Josh Espinoza, Shauna Sprunger
 
