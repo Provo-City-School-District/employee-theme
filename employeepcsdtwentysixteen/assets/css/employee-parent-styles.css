@@ -1164,28 +1164,18 @@ Department main styles
 404 styles
 --------------------------------------------------------------------
 */
+.grid404 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap:1em;
+	grid-template-areas: "results image";
+}
 #cludo-404 {
-	width: 40%;
-	margin: 0 !important;
-}
-
-#cludo-404 h3 {
-	text-transform: none !important;
-}
-
-#cludo-404 .cludo-result-item {
-	font-size: 12px;
-}
-
-#cludo-404 .cludo-result-item-title {
-	font-size: 18px;
-	margin-bottom: 5px;
+	grid-area: results;
 }
 
 #image404 {
-	width: 25%;
-	position: absolute;
-	right: 15px;
+	grid-area: image;
 }
 
 .powered-by {
