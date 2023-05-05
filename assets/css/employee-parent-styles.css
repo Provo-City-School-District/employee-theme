@@ -58,23 +58,6 @@ em {
 iframe {
 	display: none;
 }
-
-/* Fix for Wordpress Admin Bar */
-/* #wpadminbar {
-	top: unset;
-	bottom: 0;
-	position: fixed;
-} */
-
-/* body.admin-bar #mainHeader {
-	top: 30px;
-} */
-
-/* body.admin-bar #mainContent {
-	margin-top: 130px;
-} */
-
-/* body.admin-bar #wrapper{margin-top: 145px;} */
 .grecaptcha-badge {
 	visibility: hidden;
 }
@@ -132,32 +115,13 @@ body {
 	line-height: 1.375em;
 }
 
-#mainHeader {
-	/* background:#dce3e8;
-	background:-moz-linear-gradient(top,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
-	background:-webkit-linear-gradient(top,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
-	background:linear-gradient(to bottom,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8); */
-	/* padding: 20px 20px 5px 30px; */
-	/* position: fixed; */
-	/* display: grid; */
-	/* top: 0; */
-	/* left: 0; */
-	/* right: 0; */
-	/* min-height: 107px; */
-	/* box-shadow: 0 3px 3px -2px #000; */
-	/* -webkit-box-shadow:0 3px 3px -2px #000; */
-	/* -moz-box-shadow:0 3px 3px -2px #000; */
-	/* z-index: 1000; */
-}
 
 #mainContent {
-	/* width:100%; */
 	background-image: url(//globalassets.provo.edu/image/backgrounds/contentarea-texture-dk.jpg);
 	background-repeat: repeat;
 	z-index: 900;
 	display: grid;
 	position: relative;
-	
 	margin-bottom: 50px;
 	overflow: visible;
 	grid-template-columns: 1fr;
@@ -206,23 +170,6 @@ body {
 	padding-right: 10px;
 }
 
-/*
-#mainFooter p {
-	margin:15px 15px 15px 0;
-}
-#mainFooter .feedback {
-	text-align:right;
-	margin-top:-10px;
-}
-#mainFooter .feedback a {
-	color:#dae1e7;
-	font-size:16px;
-}
-#mainFooter .feedback a:hover {
-	color:#df6d1b;
-	text-decoration:underline;
-}
-*/
 
 /*
 --------------------------------------------------------------------
@@ -242,91 +189,7 @@ Utility Classes
 	min-height: 80vh;
 }
 
-/*
---------------------------------------------------------------------
-Main Header
---------------------------------------------------------------------
-*/
 
-/* 
-.districtLogo {
-	position: absolute;
-	width: 205px;
-}
-
-#cludo-search-form .search-input {
-	width: 400px;
-	height: 35px;
-	position: absolute;
-	right: 55px;
-	padding: 0;
-	margin: 0;
-}
-
-#cludo-search-form .search-submit {
-	width: 35px;
-	height: 35px;
-	display: block;
-	position: absolute;
-	right: 20px;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	cursor: pointer;
-	background-color: #21395a;
-}
-
-#cludo-search-form input.search-icon {
-	background-position: 0 0;
-	z-index: 90;
-	color: transparent;
-	background-image: url(//globalassets.provo.edu/image/icons/search-lt.svg);
-}
-
-.contactinfo {
-	text-align: right;
-	margin-top: 40px;
-	color: #5c6571;
-} */
-
-/* removed because we are making all of these lines the same size
-.contactinfo li:first-child {
-	font-size:10px;
-}
-*/
-/* .contactinfo li {
-	list-style: none;
-	font-size: 10px;
-	margin: 0;
-	line-height: 1.3em;
-	text-transform: uppercase;
-} */
-
-/*
-#mainHeader input[type=checkbox] {
-	position:absolute;
-	top:-9999px;
-	left:-9999px;
-}
-*/
-/* #mainHeader .sociallinks {
-	position: absolute;
-	right: 470px;
-	top: 19px;
-}
-
-#mainHeader .sociallinks li {
-	display: inline;
-	margin: 0 10px 0 0;
-}
-
-#mainHeader .sociallinks li a {
-	text-decoration: none;
-}
-
-#mainHeader .sociallinks li img {
-	width: 35px;
-} */
 
 /*
 --------------------------------------------------------------------
@@ -360,173 +223,6 @@ Cludo Search
 	background-color: #ccc;
 }
 
-
-/*
---------------------------------------------------------------------
-Navigation
---------------------------------------------------------------------
-commented out 2-28-22 for the new employee front page design
-
-
-#mobileNav {
-	display:none;
-}
-#mainHeader .mobileMenu {
-	display:none;
-	cursor:pointer;
-}
-#mainHeader .mobileMenu img {
-	width:15px;
-	height:15px;
-	margin-bottom:-2px;
-	margin-right:5px;
-}
-#mainNav {
-	width: 100%;
-	font-size:.85em;
-	float:left;
-}
-.nav-menu {
-	display:block;
-	position:relative;
-	list-style:none;
-	text-align:left;
-	margin: -23px 0px 0 190px;
-	padding:0;
-	z-index:15;
-}
-.nav-item {
-	list-style:none;
-	display:inline-block;
-	position:relative;
-	padding:0;
-	margin:0;
-}
-.nav-item a:first-child {
-	text-transform:uppercase;
-}
-.nav-item > a {
-	position:relative;
-	display:inline-block;
-	color:#002b51;
-	padding:.5em 1em;
-	margin:8px 0 -1px;
-	border:1px solid transparent;
-	text-decoration:none;
-}
-.nav-item > a:hover {
-	color:#e16c16;
-	text-decoration:underline;
-}
-.nav-item > a:focus,.nav-item > a.open {
-	border:1px solid transparent;
-}
-.nav-item > a.open {
-	background-color:transparent;
-	border-bottom:none;
-	z-index:1;
-	color:#e16c16;
-}
-.sub-nav {
-	position:fixed;
-	left: 0;
-	top: 124px;
-	opacity: 0;
-	visibility:hidden;
-
-	/*transition: visibility 0s linear 0s, opacity 400ms;    needs a comment at the end of this line
-	transition-delay:.5s;
-	margin-top:9px;
-	padding:30px 20px 0;
-	background-color:#21395a;
-	text-transform:none;
-	width:calc(97% - 320px);
-	text-align:left;
-	border-radius:3px;
-	box-shadow:1px 1px 5px #000;
-}
-.sub-nav a {
-	text-decoration:none;
-	color:#dae1e7;
-	font-size:1em;
-	text-transform:uppercase;
-	font-weight:400;
-}
-.sub-nav.open {
-	visibility:visible;
-	opacity: 1;
-	transition: visibility 0s linear 0s, opacity 400ms;
-	transition-delay:.5s;
-}
-.sub-nav ul.sub-nav-group {
-	display:inline-block;
-	vertical-align:top;
-	margin:0 1%;
-	padding:0;
-	width:30%;
-}
-ul.sub-nav-group li img {
-	max-width:45px;
-	max-height:45px;
-	background:#dae1e7;
-	border-radius:3px;
-	margin-right:15px;
-	display:inline-block;
-	vertical-align:top;
-	margin-bottom:10px;
-}
-.sub-nav ul.sub-nav-group li {
-	display:block;
-	list-style-type:none;
-	text-align:left;
-	margin:0;
-	padding:0;
-}
-.sub-nav .sub-nav-group .subMenu {
-	margin-top:-30px;
-	margin-bottom:15px;
-	display:block;
-}
-.sub-nav ul.sub-nav-group li ul {
-	margin-top:10px;
-	font-size:1em;
-	display:block;
-}
-.sub-nav ul.sub-nav-group li ul li {
-	margin:0 0 0 50px;
-}
-.sub-nav ul.sub-nav-group li a {
-position: absolute;
-width: 26%;
-}
-.sub-nav ul.sub-nav-group li ul li a {
-	text-transform:capitalize;
-	position: relative;
-}
-.activePost .sub-nav-group {
-	background-color:#DAE1E7;
-	padding-top:10px;
-	padding-bottom:10px;
-	margin-left:0;
-}
-.menuHeading {
-	text-transform:uppercase;
-	color:#dae1e7;
-	font-size:1em;
-}
-.activePost .sub-nav-group li {
-	list-style:none;
-}
-.activePost .sub-nav-group .subMenu {
-	margin-left:75px;
-	margin-top:-40px;
-}
-.downarrow:after {
-	content:"\25BC";
-	font-size:8px;
-	line-height:1em;
-}
-*/
 /*
 -------------------------------------------------------------------------------------------------
 Content Area
@@ -534,12 +230,6 @@ Content Area
 */
 .content {
 	display: block;
-	/* position:absolute; */
-	/* margin-top: 133px; */
-	/* left: 0; */
-	/* top: 0; */
-	/* bottom: 0; */
-	/* max-width:calc(100% - 320px); */
 	overflow-y: auto;
 	overflow-x: hidden;
 	padding-bottom:45px;
@@ -554,14 +244,6 @@ Content Area
 	display: block !important;
 	background-color: #21395a !important;
 }
-
-/* .newsBlog {
-	margin-top:133px;
-} */
-/* .page {
-	margin-top: 133px;
-} */
-
 /*
 --------------------------------------------------------------------
 Breadcrumbs
@@ -623,16 +305,6 @@ Post Grid
 	padding: 15px;
 }
 
-
-
-/* .postgrid {
-	display:flex;
-	flex-wrap:wrap;
-} */
-/* .postgrid .post {
-	width:27.33%;
-	padding:20px 3%;
-} */
 .postgrid .post:nth-child(even),
 .post div.postgrid:nth-child(even) {
 	background-color: #dbe1e7;
@@ -977,6 +649,8 @@ Department main styles
 	margin-left: -50%;
 }
 
+
+
 /* Directory Grid  */
 .directoryGrid {
     display: flex;
@@ -987,23 +661,30 @@ Department main styles
 
 .directoryGrid>* {
     padding: 1em 0;
-    width:100%;
+    width: 100%;
 }
-@media (min-width:500px){
+.directoryGrid h2,.directoryGrid h3 {
+    flex:100%;
+    background-color: unset!important;
+}
+@media (min-width:500px) {
     .directoryGrid>* {
         width: calc(100% / 3);
     }
 }
-@media (min-width:1000px){
+
+@media (min-width:1200px) {
     .directoryGrid>* {
         width: calc(100% / 5);
     }
 }
-/* @media (min-width:1400px){
+
+@media (min-width:1400px) {
     .directoryGrid>* {
         width: calc(100% / 7);
     }
-} */
+}
+
 .directoryGrid>*:nth-child(even) {
     background-color: var(--even-color);
 }
@@ -1020,7 +701,10 @@ Department main styles
 }
 
 .directoryGrid .personalvCard ul {
+    margin: 1em 0 1em 0!important;
     list-style: none;
+    text-align: center;
+    margin-left: unset;
 }
 
 .directoryGrid .personalvCard ul li {
@@ -1028,136 +712,12 @@ Department main styles
     margin: 0 !important;
 }
 
-.directoryGrid .personalvCard ul li.name {
+.directoryGrid .personalvCard ul li.name,.directoryGrid .personalvCard ul li.assignedSchool {
     font-size: 1em;
 }
-
-
-
-/* .directory .postgrid {
-	display: grid;
-	grid-template-columns: 1fr;
-
-
+.directoryGrid .personalvCard ul li.cteName {
+    font-size:0.8em;
 }
-
-.directory .postgrid img {
-	max-width: 120px;
-}
-
-.directory .postgrid ul,
-.directory .postgrid img {
-	display: table;
-	margin: 0 auto;
-}
-
-.directory .postgrid ul li {
-	margin: unset;
-
-}
-
-@media (min-width: 900px) {
-	.directory .postgrid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media (min-width: 1200px) {
-	.directory .postgrid {
-		grid-template-columns: repeat(5, 1fr);
-	}
-} */
-
-/* .directory .postgrid .staff-member-listing {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-
-.directory .postgrid .post {
-	width: 16%;
-	padding: 20px 2%;
-	position: relative;
-}
-
-.directory .postgrid .post.hide {
-	display: none;
-}
-
-.directory .postgrid .post img {
-	margin: 0 auto;
-	display: block;
-	float: none;
-	width: 120px;
-	max-height: 150px;
-}
-
-.directory .postgrid .post ul {
-	margin-left: 0;
-	margin-top: 20px;
-}
-
-.directory .postgrid .post ul li {
-	list-style: none;
-	margin: 0;
-} */
-/* 
-.directory .personalvCard .title {
-	font-size: .7em;
-	font-style: italic;
-	line-height: 15px;
-}
-
-.directory .personalvCard .name {
-	font-size: 1.2em;
-	font-weight: 700;
-	margin-left: 25px;
-	list-style-position: inside;
-	list-style: none;
-}
-
-.directory .personalvCard ul li.phone,
-.directory .personalvCard ul li.email,
-.directory .personalvCard ul li.address,
-.directory .personalvCard ul li.schools {
-	font-size: .7em;
-}
-
-.activePost #directorySearch,
-.activePost #filter,
-.activePost #directorySearchIcon {
-	display: none;
-}
-
-.activePost #filter {
-	border: 1px solid #ccc;
-	padding: 5px;
-	width: calc(100% - 40px);
-	margin-bottom: 0;
-}
-
-.activePost #directorySearch {
-	width: 250px;
-	float: right;
-}
-
-.sidebar #sidebar-filter,
-.sidebar #appfilter {
-	display: inline;
-	margin-top: 20px;
-	width: 75%;
-}
-
-.sidebar #directorySearchIcon {
-	display: inline;
-}
-
-.sidebar #directorySearchIcon,
-.activePost #directorySearchIcon {
-	width: 22px;
-	height: 22px;
-	margin-bottom: -7px;
-} */
 
 /*
 --------------------------------------------------------------------
@@ -1181,31 +741,6 @@ Department main styles
 .powered-by {
 	display: none;
 }
-
-
-
-/* .activePost #cludo-search-form {
-	border:1px solid #ccc;
-	padding:5px;
-	margin-bottom:20px;
-	max-width: 80%;
-	height: 22px;
-}
-.activePost #cludo-search-form input {
-	width: 94%;
-}
-.activePost #cludo-search-form .search-submit {
-	width:35px;
-	height:34px;
-	margin-top: -6px;
-	color: transparent;
-	background-color: #21395a;
-	margin-right: -41px;
-	overflow: hidden;
-	background-image: url(//globalassets.provo.edu/image/icons/search-lt.svg);
-	text-align:center;
-}
-*/
 /*
 --------------------------------------------------------------------
 Sidebars
@@ -1214,10 +749,8 @@ Sidebars
 .sidebar {
 	display: block;
 	width: 280px;
-	/* height: auto; */
 	position: absolute;
 	right: 0;
-	/* margin-top: 133px; */
 	top: 0;
 	bottom: 45px;
 	padding: 0 20px;
@@ -1758,82 +1291,6 @@ ul li.ext {
 ul.imageList li {
 	list-style: none !important;
 }
-
-/*
-.content ul li a:after {
-	content:' - External Link';
-	position:absolute;
-	left:-9999px;
-}
-.content ul li a[href*="provo.edu"]:after {
-	content:' - Internal Link';
-	position:absolute;
-	left:-9999px;
-}
-.content ul li a[href*="pdf"]:after {
-	content:' - PDF Document';
-	position:absolute;
-	left:-9999px;
-}
-.content ul li a[href*="xls"]:after {
-	content:' - XLS Document';
-	position:absolute;
-	left:-9999px;
-}
-ul li.int {
-	list-style-image:url(//globalassets.provo.edu/image/icons/pcsd-icon-16x16.png);
-}
-ul li.pdf {
-	list-style-image:url(//globalassets.provo.edu/image/icons/pdf.png);
-}
-ul li.xls {
-	list-style-image:url(//globalassets.provo.edu/image/icons/xls.png);
-}
-ul li.ext {
-	list-style-image:url(//globalassets.provo.edu/image/icons/external-link-gray.svg);
-}
-ul li.pdf a:after {
-	content:' - PDF Document';
-	position:absolute;
-	left:-9999px;
-}
-a.pdf:after {
-	content:' (PDF)';
-}
-
-ul li.xls a:after {
-	content:' - Excel Document';
-	position:absolute;
-	left:-9999px;
-}
-a.xls:after {
-	content:' (XLS)';
-}
-
-ul li.ext a:after {
-	content:' - External Link';
-	position:absolute;
-	left:-9999px;
-}
-a.ext:after {
-	content:' ';
-	display:inline-block;
-	margin-left:3px;
-	width:.7em;
-	height:.7em;
-	background-size:contain;
-	background-image:url(//globalassets.provo.edu/image/icons/external-link-gray.svg);
-}
-#mainNav a.ext:after,#sidebar a.ext:after {
-	content:' ';
-	display:inline-block;
-	margin-left:3px;
-	width:.7em;
-	height:.7em;
-	background-size:contain;
-	background-image:url(//globalassets.provo.edu/image/icons/external-link-white.svg);
-}
-*/
 blockquote {
 	font-size: 1em;
 	font-style: italic;
@@ -2212,45 +1669,12 @@ form ul li span {
 Responsive styles
 --------------------------------------------------------------------------------------------------------------
 */
-@media (max-width: 1200px) {
-	/*.nav-item .ourDistrict {
-		left:100px;
-	}
-	.nav-item .schools {
-		left:-100px;
-	}
-
-	ul.sub-nav-group li img {
-		height: 30px;
-		width:30px;
-	}
-	.sub-nav .sub-nav-group .subMenu {
-		margin-top: -15px;
-	}
-	*/
-}
 
 @media (max-width: 1180px) {
 	.content .slider .slide span {
 		height: auto;
 	}
 
-	/*
-	#mainContent {
-		bottom:50px;
-	}
-	#mainFooter {
-		height: 50px;
-	}
-	*/
-	/*
-	#mainFooter p {
-		margin:10px 10px 10px 0;
-	}
-	#mainFooter .feedback {
-		margin-top:-5px;
-	}
-	*/
 	.twoColumnMedia {
 		width: 100%;
 		float: none;
@@ -2259,139 +1683,17 @@ Responsive styles
 	}
 }
 
-@media (max-width: 1060px) {
-	/*
-	.nav-item > a {
-		padding:.3em;
-	}
-	.nav-menu {
-		margin-right:70px;
-	}
-	.postgrid .post {
-		width:44%;
-	}
-	.sub-nav .sub-nav-group .subMenu {
-		margin-top: -7px;
-	}
-	*/
-}
 
-@media (max-width: 910px) {
-	/*
-	.nav-item > a {
-		padding:.1em;
-	}
-	*/
-}
+
+
 
 @media (max-width: 880px) {
-	/*
-	#mainContent {
-		display:block;
-		position:inherit;
-		margin-top:132px;
-		z-index:1000;
-	}
-	#mainContent .content {
-		position:inherit;
-		max-height:927px;
-		min-height:895px;
-	}
-	#mainContent .sidebar {
-		margin-top:132px;
-		max-height:927px;
-	}
-	#mainFooter {
-		display:block;
-		position:inherit;
-		clear:both;
-		padding:5px;
-		height:inherit;
-	}
-	#wp-live-chat {
-		bottom:0!important;
-	}
-	*/
-
-	/*
-	.nav-menu {
-		display:none;
-	}
-	#mainHeader .mobileMenu {
-		display:block;
-		text-align:center;
-		width:85%;
-		margin-top: -15px;
-	}
-	*/
 	#cludo-search-form .search-input {
 		width: 200px;
 	}
-
-	/* #mainHeader .sociallinks {
-		right: 270px;
-	} */
-
-	/*
-	#reveal-menu[type=checkbox]:checked ~ #mainNav #mobileNav {
-		display:block;
-		position:absolute;
-		margin-top:-1px;
-		background:#21395A;
-		left:0;
-		right:0;
-		padding-top:1px;
-		padding-bottom:1px;
-	}
-	#mobileNav li {
-		list-style:none;
-		width:100%;
-		text-transform:uppercase;
-		padding:10px 20px 10px 10px;
-	}
-	#mobileNav li a {
-		color:#dae1e7;
-	}
-
-	.content .currentContent {
-		width:96%;
-		height:auto;
-		min-height: auto;
-		max-height: auto;
-		overflow:visible;
-		padding-bottom:20px;
-	}
-	.currentContent .content-featured-image {
-		position:relative;
-		height:auto;
-	}
-	.content .slider {
-		width:100%;
-		float:none;
-	}
-	.content .slider:hover .slick-arrow {
-		visibility:hidden;
-	}
-	.departmentResources .threeColumn {
-		min-height:auto;
-		width:96%;
-	}
-	.postgrid .post {
-		width:44%;
-	}
-	.postgrid .post .featured-image {
-		margin-top:10px;
-	}
-	*/
 }
 
 @media (max-width: 800px) {
-
-	/*
-	.postgrid .post {
-		width:94%;
-	}
-	*/
 	.sidebar {
 		position: unset;
 		width: unset;
@@ -2404,22 +1706,9 @@ Responsive styles
 }
 
 @media (max-width: 770px) {
-	/* #mainHeader {
-		height: 68px;
-		max-width: 100%;
-		padding-left: 20px;
-	} */
-
 	p#siteTitle {
 		left: 190px !important;
 	}
-
-	/*
-	#mainHeader .mobileMenu {
-		width:100%;
-		text-align:center;
-	}
-	*/
 	.districtLogo {
 		width: 20%;
 	}
@@ -2450,42 +1739,6 @@ Responsive styles
 		display: none;
 	}
 
-	/*
-	#mainNav #mobileNav {
-		top:124px;
-	}
-
-	#mainContent {
-		width:100%;
-		margin-top:130px;
-	}
-	#mainContent .content {
-		width:100%;
-		max-height:none;
-	}
-	#mainContent .sidebar {
-		position:relative;
-		margin-top:0;
-		float:none;
-		width:92%;
-		padding:4%;
-		height:auto;
-		max-height:none;
-	}
-	*/
-	/* .postgrid article.post .featured-image {
-		height: auto;
-	}
-
-	.singlePost .activePost .featured-image-full {
-		float: none;
-		max-width: 100%;
-		margin-left: 0;
-	}
-
-	.postgrid .post {
-		padding-bottom: 20px;
-	} */
 
 	.content .currentContent {
 		width: 100%;
@@ -2499,27 +1752,6 @@ Responsive styles
 		width: 100%;
 		min-height: unset;
 	}
-
-	/* .directory .postgrid .post {
-		width: 46%;
-	}
-
-	.directory .postgrid .post {
-		width: 100%;
-		max-width: 100%;
-		min-height: auto;
-		float: left;
-	}
-
-	.directory .postgrid .post ul {
-		width: 100%;
-		position: unset;
-	}
-
-	.directory .postgrid .post ul li {
-		text-align: center;
-	} */
-
 	.activePost #directorySearch,
 	.activePost #filter,
 	.activePost #directorySearchIcon {
@@ -2555,10 +1787,6 @@ Responsive styles
 }
 
 @media (max-width: 620px) {
-	/* #mainHeader .sociallinks {
-		display: none;
-	} */
-
 	p#siteTitle {
 		left: 20px !important;
 	}
@@ -2574,18 +1802,8 @@ Responsive styles
 
 @media (min-width:600px) {
 	#mainContent {
-		/* padding-top: 127px; */
-		/* margin-top:unset; */
-		/* margin-bottom:45px; */
-		/* padding-bottom: 30px; */
-		/* position: fixed; */
-		/* margin-bottom:45px; */
-		/* overflow: scroll; */
-		/* top:133px; */
 		grid-template-columns: 1fr 320px;
 	}
-
-	.content {}
 }
 
 @media (min-width:1000px) {
@@ -2613,10 +1831,6 @@ Responsive styles
 }
 
 @media (max-height: 400px) {
-	/* #mainHeader {
-		position: relative;
-	} */
-
 	#mainContent {
 		margin-top: 0;
 		overflow: visible;
@@ -2671,37 +1885,6 @@ Arrows
 	position: relative;
 	top: -135px;
 }
-
-
-
-
-
-
-
-@media (max-width:900px) {
-	#mainContent {
-		/* top: 30px;
-    bottom: 0px;
-    position: absolute;
-    width: 100%; */
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
