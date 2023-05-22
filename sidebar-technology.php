@@ -28,6 +28,8 @@
 	</ul>
 	<!-- <h2>Technology Contacts</h2> -->
 		<?php 	
+		//requested to be added back by chad
+		// https://helpdesk.provo.edu/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=106565
 			echo file_get_contents('https://provo.edu/directory_page/tech-support-admin-sidebar/');
 			echo file_get_contents('https://provo.edu/directory_page/tech-support-staff-sidebar/');	
 		//	echo '<h3>Field Technicians</h3>';
