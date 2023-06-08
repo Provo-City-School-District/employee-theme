@@ -13,7 +13,7 @@ function pcsd_scripts_styles() {
 	/*   REGISTER ALL CSS FOR SITE */
 	/*   CALL ALL CSS AND SCRIPTS FOR SITE */
 	wp_enqueue_style('variables', get_template_directory_uri() . '/assets/css/variables.css', '', '1.0.01', false);
-	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.07', false);
+	
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array('parent_style'), '1.00.02', false);
 	wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css', '', '1.0.02', false);
 	wp_enqueue_script( 'theme_scripts',get_template_directory_uri() .'/assets/js/scripts.js', array() , '1.00.01', true);
@@ -23,6 +23,15 @@ function pcsd_scripts_styles() {
 	//wp_enqueue_script( 'cookie_script');
 	wp_enqueue_script( 'global_scripts', 'https://globalassets.provo.edu/js/scripts.js', array('jquery','slick_slider'), '1.00.01', true);
 	
+	
+	
+	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.07', false);
+	if(!is_page_template('template-EmployeeHome-2023.php')) {
+	}
+	if(is_page_template('template-EmployeeHome-2023.php')) {
+		// wp_enqueue_style( 'department-styles', get_template_directory_uri() . '/assets/css/department-styles.css','','0.0.01', false);
+		wp_enqueue_style( 'front_page', get_template_directory_uri() . '/assets/css/frontpage-employee.css', array(),'1.00.01', false);
+	}
 
 	
 	if ( is_404() ) {
