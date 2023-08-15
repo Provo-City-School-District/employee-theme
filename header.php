@@ -32,7 +32,7 @@
 	<header id="mainHeader">
 
 		<div class="siteLogo griditem">
-			<a href="<?php echo home_url(); ?>">
+			<a href="https://provo.edu">
 				<img alt="Provo City School District Home" class="websiteLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo/pcsd-logo-website-header-x2.png" />
 			</a>
 
