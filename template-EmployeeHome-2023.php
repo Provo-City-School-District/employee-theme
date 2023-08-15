@@ -25,7 +25,6 @@ get_header();
 				wp_nav_menu(array('menu' => $topMenu));
 				?>
 			</nav>
-
 			<section class="teasers">
 
 				<?php
