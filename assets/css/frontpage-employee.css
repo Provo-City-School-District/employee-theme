@@ -46,6 +46,15 @@ Section Above Tools Buttons */
 	font-size: 110%;
 }
 
+.tippytop ul:nth-child(1) {
+    grid-template-columns: repeat(3, 50px);
+	list-style: none;
+}
+.tippytop ul {
+    display: grid;
+    margin: unset;
+    justify-content: center;
+}
 .tippytop>p.email:before {
 	display: inline-block;
 	background-image: url('../icons/email-green.png');
@@ -54,6 +63,11 @@ Section Above Tools Buttons */
 	background-repeat: no-repeat;
 	height: 30px;
 	width: 30px;
+}
+@media (min-width: 700px) {
+	.tippytop ul:nth-child(1) {
+		justify-self: start;
+	}
 }
 
 @media (min-width: 620px) {
@@ -67,9 +81,20 @@ Section Above Tools Buttons */
 	}
 }
 
-
-
-
+-------------
+@media (min-width: 700px)
+#stayCurrent ul:nth-child(1) {
+    justify-self: start;
+}
+#stayCurrent ul:nth-child(1) {
+    grid-template-columns: repeat(3, 50px);
+}
+#stayCurrent ul {
+    display: grid;
+    margin: unset;
+    justify-content: center;
+}
+-------------
 /* ==============================================================
 Tools For Success Buttons */
 .successTools {

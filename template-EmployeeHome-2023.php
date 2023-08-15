@@ -11,7 +11,11 @@ get_header();
 		<section class="employee-home">
 			<h1><?php the_title(); ?></h1>
 			<div class="tippytop">
-				<p><em>The tools you need to succeed at PCSD</em></p>
+				<ul>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-insta.svg" alt="link to Instagram" /></a></li>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-twitter.svg" alt="link to Twitter" /></a></li>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-facebook.svg" alt="link to Facebook" /></a></li>
+			</ul>
 				<p class="email"><a href="<?= get_field('hero_link_address'); ?>"><?= get_field('hero_link_label'); ?></a></p>
 			</div>
 			<nav class="successTools">
@@ -21,14 +25,6 @@ get_header();
 				wp_nav_menu(array('menu' => $topMenu));
 				?>
 			</nav>
-			
-
-
-
-
-
-
-
 
 			<section class="teasers">
 
