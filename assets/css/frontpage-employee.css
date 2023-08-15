@@ -38,31 +38,46 @@ Section Above Tools Buttons */
 	justify-items: center;
 	align-items: center;
 }
-
-.tippytop>p:nth-child(2) {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	font-size: 110%;
-}
-
-.tippytop ul:nth-child(1) {
-    grid-template-columns: repeat(3, 50px);
-	list-style: none;
-}
 .tippytop ul {
     display: grid;
     margin: unset;
-    justify-content: center;
+    justify-content: end;
+	list-style: none;
 }
-.tippytop>p.email:before {
+.tippytop ul:nth-child(1) {
+    grid-template-columns: repeat(3, 50px);
+
+}
+.tippytop ul:nth-child(2) a:after {
 	display: inline-block;
-	background-image: url('../icons/email-green.png');
+	background-image: url('../icons/email-white.png');
 	content: '';
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 30px;
 	width: 30px;
+	position: unset;
+	left:unset;
+}
+.tippytop ul:nth-child(2) {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 110%;
+
+}
+
+.tippytop ul:nth-child(2) a {
+	background-color: var(--stu-color);
+    color: #fff;
+    padding: 1em;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    border-radius: 5px;
+	display: grid;
+	align-items: center;
+    grid-template-columns: 1fr 1em;
+    gap: 0.5em;
 }
 @media (min-width: 700px) {
 	.tippytop ul:nth-child(1) {

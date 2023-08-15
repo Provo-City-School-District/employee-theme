@@ -16,7 +16,9 @@ get_header();
 				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-twitter.svg" alt="link to Twitter" /></a></li>
 				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-facebook.svg" alt="link to Facebook" /></a></li>
 			</ul>
-				<p class="email"><a href="<?= get_field('hero_link_address'); ?>"><?= get_field('hero_link_label'); ?></a></p>
+			<ul>
+				<li><a href="<?php echo get_field('hero_link_address'); ?>"><?php echo get_field('hero_link_label'); ?></a></li>
+			</ul>
 			</div>
 			<nav class="successTools">
 				<?php
