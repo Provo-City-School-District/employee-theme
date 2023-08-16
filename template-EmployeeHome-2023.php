@@ -7,6 +7,11 @@ get_header();
 ?>
 <main id="mainContent" class="frontPage">
 	<h1 class="visuallyhidden">Employee Support Website</h1>
+	<ol id="breadcrumbs" class="breadcrumbs">
+		<li><a class="bread-link bread-home" href="https://provo.edu">Home </a> / </li>
+		<li>Employee Essentials</li>
+	</ol>
+	<div id="mainwrapper">
 	<div class="siteContainer">
 		<section class="employee-home">
 			<h1><?php the_title(); ?></h1>
@@ -114,6 +119,7 @@ get_header();
 
 			<?php
 			} ?>
+	</div>
 	</div>
 	<!-- Current Page Content End -->
 </main>

@@ -3,7 +3,15 @@ get_header();
 ?>
 <main id="mainContent">
 	<section class="content singlePost">
-		<?php custom_breadcrumbs(); ?>
+		<ol id="breadcrumbs" class="breadcrumbs">
+			<li><a class="bread-link bread-home" href="https://employee.provo.edu" title="Home">Home</a></li>
+			<li> / </li>
+			<li><a class="bread-parent bread-parent-3445" href="https://employee.provo.edu/technology/" title="Technology Support">Technology Support</a></li>
+			<li> / </li>
+			<li> <a href="https://employee.provo.edu/technology/approved-applications/">Approved Apps</a></li>
+			<li> / </li>
+			<li><?php the_title(); ?></li>
+		</ol>
 		<div class="postwrapper">
 			<article class="activePost">
 				<?php
@@ -15,18 +23,18 @@ get_header();
 						</header>
 						<div class="featured-image">
 
-								<?php
-								if (get_field('featured_image', $post_id)) {
-								?>
-									<img src="<?php echo get_field('featured_image'); ?>" alt="" class="" />
-								<?php
-								} elseif (has_post_thumbnail()) {
-									the_post_thumbnail();
-								} else { ?>
-									<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
-								<?php } ?>
+							<?php
+							if (get_field('featured_image', $post_id)) {
+							?>
+								<img src="<?php echo get_field('featured_image'); ?>" alt="" class="" />
+							<?php
+							} elseif (has_post_thumbnail()) {
+								the_post_thumbnail();
+							} else { ?>
+								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
+							<?php } ?>
 
-							</div>
+						</div>
 						<ul class="noblt">
 							<?php
 

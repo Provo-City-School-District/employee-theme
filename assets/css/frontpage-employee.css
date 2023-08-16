@@ -2,9 +2,14 @@
 	grid-template-columns: unset !important;
 }
 #mainContent {
-	background:#fff;
+	/* background:#fff; */
 	
 }
+
+#mainwrapper {
+	background-color: #fff;
+}
+
 
 @media (min-width:800) {
 	#mainContent {
@@ -135,6 +140,7 @@ Tools For Success Buttons */
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	border-radius: 3px;
 	min-height: 45px;
 }
 
