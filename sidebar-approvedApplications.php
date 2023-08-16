@@ -1,8 +1,14 @@
 <aside id="sidebar" class="sidebar">
-			
-			<label for="appsearch" class="visuallyhidden" id="appSearch">Approved Apps Search: </label>
+		<?php
+			if(!is_single()){
+				?>
+<label for="appsearch" class="visuallyhidden" id="appSearch">Approved Apps Search: </label>
 	        <input type="text" name="appsearch" class="text-input" aria-labelledby="directorySearch" id="appfilter" value="" placeholder="Search Apps..." />
 	        <img id="directorySearchIcon" src="//globalassets.provo.edu/image/icons/search-lt.svg" alt="" />
+				<?php
+			}
+		?>	
+			
 	
 		<ul class="imagelist">
 			<li>
