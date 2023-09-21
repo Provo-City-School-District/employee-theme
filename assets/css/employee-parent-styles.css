@@ -814,7 +814,14 @@ Sidebars
 	width: 100%;
 	height: 100%;
 }
-
+.sidebar .directoryGrid {
+    display: unset;
+	background-color: unset;
+}
+.sidebar .directoryGrid>*{
+	background-color: unset;
+	width:100%
+}
 .sidebar .personalvCard {
 	clear: both;
 }
