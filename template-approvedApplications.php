@@ -14,7 +14,7 @@
 				$application_status = get_field('application_status');
 				$args = array (
 					'post_type'              => array( 'approved_application' ),
-					'post_status'            => published,
+					'post_status'            => 'published',
 					'nopaging'               => true,
 					'order'                  => 'ASC',
 					'orderby'                => 'title',
