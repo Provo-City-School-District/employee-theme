@@ -25,7 +25,7 @@ function pcsd_scripts_styles() {
 	
 	
 	
-	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.07', false);
+	wp_enqueue_style( 'parent_style', get_template_directory_uri().'/assets/css/employee-parent-styles.css', '', '1.00.08', false);
 	if(!is_page_template('template-EmployeeHome-2023.php')) {
 	}
 	if(is_page_template('template-EmployeeHome-2023.php')) {
@@ -394,3 +394,58 @@ function special_nav_class ($classes, $item) {
   }
   return $classes;
 }
+
+
+
+/*
+
+working on  https://helpdesk.provo.edu/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=107775
+*/
+
+// add_action( 'wpcf7_mail_sent', 'save_contact_form_data' );
+
+// function save_contact_form_data( $contact_form ) {
+// 	// error_log( 'save_contact_form_data() called' );
+//     $submission = WPCF7_Submission::get_instance();
+//     if ( $submission ) {
+//         $posted_data = $submission->get_posted_data();
+// 		error_log( print_r( $posted_data, true ) );
+// 		// print_r($posted_data);
+//         // Check if this is the specific form you want to save data for
+//         if ( $contact_form->id() == '5b651fc' ) {
+//             // Upload the files to the website
+//             $file_urls = array();
+//             foreach ( $submission->uploaded_files() as $key => $value ) {
+//                 $upload_dir = wp_upload_dir();
+//                 $file_path = $upload_dir['path'] . '/' . $value;
+//                 $file_url = $upload_dir['url'] . '/' . $value;
+//                 if ( move_uploaded_file( $value, $file_path ) ) {
+//                     $file_urls[ $key ] = $file_url;
+//                 }
+//             }
+//             // Save the data to the database
+//             global $wpdb;
+//             $table_name = $wpdb->prefix . 'contact_form_data';
+//             $wpdb->show_errors();
+// 			$wpdb->insert( $table_name, array(
+//             	'name' => $posted_data['your-name'],
+//             	'email' => $posted_data['your-email'],
+// 				'department' => $posted_data['DepartmentSchool'],
+//             	'specialInstructions' => $posted_data['SpecialInstructions'],
+// 				'whichNotification' => $posted_data['0']['WhichNotification'],
+// 				'relevant' => $posted_data['0'],
+//             	'ifOther' => $posted_data['relevant']['ifOther'],
+// 				'submissionHeadline' => $posted_data['SubmissionHeadline'],
+// 				'submissionContent' => $posted_data['SubmissionContent'],
+// 				'audienceReach' => $posted_data['audienceReach'],
+// 				'date-977' => $posted_data['date-977'],
+// 				'calendar_inc' => $posted_data['calendar-inc'],
+// 				'supervisorEmail' => $posted_data['supervisorEmail'],
+// 				'file_url_1' => isset( $file_urls['file-719'] ) ? $file_urls['file-719'] : '',
+//             	'file_url_2' => isset( $file_urls['file3'] ) ? $file_urls['file3'] : '',
+// 				'file_url_3' => isset( $file_urls['upload'] ) ? $file_urls['upload'] : ''
+//             ) );
+// 			echo $wpdb->last_error;
+//         }
+//     }
+// }

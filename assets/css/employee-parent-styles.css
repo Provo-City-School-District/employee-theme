@@ -753,7 +753,7 @@ Sidebars
 	right: 0;
 	top: 0;
 	bottom: 45px;
-	padding: 0 20px;
+	padding: 30px 20px;
 	background-color: #21395a;
 	color: #dce2e8;
 	overflow-y: auto;
@@ -938,7 +938,10 @@ Sidebars
 	color: #223a59;
 	text-decoration: none;
 }
-
+#directorySearchIcon {
+	width: 30px;
+	margin-bottom: -10px;
+}
 /*
 -------------------------------------------------------------------------------------------------
 Typography
@@ -1764,7 +1767,7 @@ Responsive styles
 	.activePost #directorySearchIcon {
 		display: inline-block;
 	}
-
+	
 	.sidebar #live-search {
 		display: none;
 	}
