@@ -12,7 +12,13 @@
         "nav nav nav";
     z-index: 10000;
 }
-#mainHeader ul,#mainHeader ul li {margin-left:unset;margin:unset}
+
+#mainHeader ul,
+#mainHeader ul li {
+    margin-left: unset;
+    margin: unset
+}
+
 .siteLogo {
     grid-area: logo;
     place-self: center;
@@ -56,6 +62,7 @@
 #navbar .community {
     background-color: var(--com-color);
 }
+
 #navbar .homeLink {
     /* background-color: var(--body-background); */
     background: url(../icons/icons8-home-page-32.png) 0 0 no-repeat var(--body-background);
@@ -63,11 +70,12 @@
     text-indent: -9999px;
     /* width: 8px; */
 }
+
 #navbar a {
     color: var(--theme-white);
     display: block;
     padding: 1em;
-    
+
 }
 
 #navbar>a {
@@ -111,6 +119,7 @@
     place-self: center;
 
 }
+
 /*
 --------------------------------------------------------------------
 Cludo Search
@@ -159,7 +168,16 @@ Cludo Search
         margin-top: 70px;
     }
 } */
+
+#trp-floater-ls.trp-top-right {
+    right: 25%;
+}
+
 @media (min-width: 800px) {
+    #navbar {
+        width: 75%;
+    }
+
     #mainHeader {
         grid-template-columns: minmax(350px, 450px) 1fr 100px;
         position: fixed;
@@ -170,13 +188,16 @@ Cludo Search
     .admin-bar #mainHeader {
         top: 32px;
     }
+
     .admin-bar #mainContent {
         margin-top: 70px;
-        top:50px;
+        top: 50px;
     }
+
     .admin-bar .alerts {
         margin-top: 125px;
     }
+
     .headerAddress {
         display: inline;
     }
@@ -194,8 +215,9 @@ Cludo Search
         /* background: url(../icons/icons8-home-page-32.png) 0 0 no-repeat var(--body-background); */
         background-position: center center;
         min-width: 15px
-        /* text-indent: -9999px; */
+            /* text-indent: -9999px; */
     }
+
     #navbar a {
         padding: unset;
     }
@@ -213,10 +235,29 @@ Cludo Search
         background-color: var(--main-blue-color);
         padding: .5em 1em;
         border-radius: 4px 4px 0 0;
-      
+
+    }
+
+    body.admin-bar #trp-floater-ls.trp-top-right {
+        top: 102px;
+    }
+
+    #trp-floater-ls.trp-top-right {
+        bottom: auto;
+        top: 70px;
+        right: 10px;
+        border-radius: 5px 5px 0 0;
     }
 }
 
+@media (min-width: 800px) and (max-width: 1100px) {
+    body.admin-bar #trp-floater-ls.trp-top-right {
+        top: 112px;
+    }
+    #trp-floater-ls.trp-top-right {
+        top:80px;
+    }
+}
 
 @media (min-width: 1100px) {
     #navbar {
@@ -232,9 +273,11 @@ Cludo Search
         margin-top: 10px;
         margin-bottom: -15px;
     }
+
     #navbar ul {
         padding-right: unset;
     }
+
     .admin-bar #mainContent {
         margin-top: 60px;
     }
