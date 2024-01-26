@@ -1,6 +1,9 @@
 .frontPage {
 	grid-template-columns: unset !important;
 }
+.fullWidth {
+	grid-template-columns: unset!important;
+}
 #mainContent {
 	/* background:#fff; */
 	
@@ -155,16 +158,16 @@ Tools For Success Buttons */
 
 /* ==============================================================
 success tool icons */
-.successTools li:before {
+/* .successTools li:before {
 	content: '';
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
 	height: 50px;
 	width: 50px;
-}
+} */
 
-li.canvas:before {
+/* li.canvas:before {
 	background-image: url(../icons/canvas.png);
 }
 
@@ -188,7 +191,7 @@ li.benefits:before {
 li.helpdesk:before {
 	background-image: url(../icons/helpdesk.png);
 	width: 80px;
-}
+} */
 
 
 

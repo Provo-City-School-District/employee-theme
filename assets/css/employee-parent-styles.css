@@ -1298,7 +1298,9 @@ ul li.ext {
 	margin-left: -4px;
 }
 
-ul.imageList li {
+ul.imageList li,
+.content .employeeHighlights li,
+.content .imageListGrid li {
 	list-style: none !important;
 }
 blockquote {

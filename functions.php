@@ -33,7 +33,18 @@ function pcsd_scripts_styles() {
 		wp_enqueue_style( 'front_page', get_template_directory_uri() . '/assets/css/frontpage-employee.css', array(),'1.00.02', false);
 	}
 
-	
+	if (is_page_template(
+		array(
+			'template-department_2022.php',
+			'template-department_2022_links.php',
+			'template-department_2022-tiles-news.php',
+			'template-department_2022_no_top_menu.php'
+		)
+	)) {
+		// wp_enqueue_style('department', get_template_directory_uri() . '/assets/css/department-styles.css', '', '1.0.01', false);
+		// wp_enqueue_style('tiles', get_template_directory_uri() . '/assets/css/tiles.css', '', '1.0.0', false);
+		wp_enqueue_style( 'front_page', get_template_directory_uri() . '/assets/css/frontpage-employee.css', array(),'1.00.01', false);
+	}	
 	if ( is_404() ) {
 		wp_enqueue_script( '404easterEgg');
 	}
