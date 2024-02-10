@@ -1,5 +1,5 @@
 <aside id="sidebar" class="sidebar technology">
-<a href="https://helpdesk.provo.edu/helpdesk/WebObjects/Helpdesk.woa" class="bigRedButton">Submit a Work Order</a>
+	<a href="https://help.provo.edu/" class="bigRedButton">Submit a Work Order</a>
 	<ul class="imagelist">
 		<li>
 			<a href="https://employee.provo.edu/category/employee-news/technology-support/">
@@ -27,12 +27,11 @@
 		<li><a href="https://employee.provo.edu/technology/approved-applications/">Approved Application List</a></li>
 	</ul>
 	<!-- <h2>Technology Contacts</h2> -->
-		<?php 	
-		//requested to be added back by chad
-		// https://helpdesk.provo.edu/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=106565
-			echo file_get_contents('https://provo.edu/directory_page/tech-support-admin-sidebar/');
-			echo file_get_contents('https://provo.edu/directory_page/tech-support-staff-sidebar/');	
-		//	echo '<h3>Field Technicians</h3>';
-		//  echo file_get_contents('https://provo.edu/directory_page/technology-field-tech/');	
-		?>
+	<?php
+
+	echo file_get_contents('https://provo.edu/directory_page/tech-support-admin-sidebar/');
+	echo file_get_contents('https://provo.edu/directory_page/tech-support-staff-sidebar/');
+	//	echo '<h3>Field Technicians</h3>';
+	//  echo file_get_contents('https://provo.edu/directory_page/technology-field-tech/');	
+	?>
 </aside>
