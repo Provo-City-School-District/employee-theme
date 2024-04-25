@@ -58,9 +58,11 @@ em {
 iframe {
 	display: none;
 }
+
 .grecaptcha-badge {
 	visibility: hidden;
 }
+
 /*
 --------------------------------------------------------------------
 Variables
@@ -126,16 +128,19 @@ body {
 	overflow: visible;
 	grid-template-columns: 1fr;
 }
-@media (min-width: 800px){
+
+@media (min-width: 800px) {
 	#mainContent {
 		margin-top: 115px;
 	}
 }
-@media (min-width: 1100px){
+
+@media (min-width: 1100px) {
 	#mainContent {
 		margin-top: 110px;
 	}
 }
+
 .content {
 	display: block;
 }
@@ -232,7 +237,7 @@ Content Area
 	display: block;
 	overflow-y: auto;
 	overflow-x: hidden;
-	padding-bottom:45px;
+	padding-bottom: 45px;
 }
 
 .wp-block-button {
@@ -244,6 +249,7 @@ Content Area
 	display: block !important;
 	background-color: #21395a !important;
 }
+
 /*
 --------------------------------------------------------------------
 Breadcrumbs
@@ -653,70 +659,75 @@ Department main styles
 
 /* Directory Grid  */
 .directoryGrid {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1500px;
-    margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1500px;
+	margin: 0 auto;
 }
 
 .directoryGrid>* {
-    padding: 1em 0;
-    width: 100%;
+	padding: 1em 0;
+	width: 100%;
 }
-.directoryGrid h2,.directoryGrid h3 {
-    flex:100%;
-    background-color: unset!important;
+
+.directoryGrid h2,
+.directoryGrid h3 {
+	flex: 100%;
+	background-color: unset !important;
 }
+
 @media (min-width:500px) {
-    .directoryGrid>* {
-        width: calc(100% / 3);
-    }
+	.directoryGrid>* {
+		width: calc(100% / 3);
+	}
 }
 
 @media (min-width:1200px) {
-    .directoryGrid>* {
-        width: calc(100% / 5);
-    }
+	.directoryGrid>* {
+		width: calc(100% / 5);
+	}
 }
 
 @media (min-width:1400px) {
-    .directoryGrid>* {
-        width: calc(100% / 7);
-    }
+	.directoryGrid>* {
+		width: calc(100% / 7);
+	}
 }
 
 .directoryGrid>*:nth-child(even) {
-    background-color: var(--even-color);
+	background-color: var(--even-color);
 }
 
 .directoryGrid>*:nth-child(odd) {
-    background-color: var(--odd-color);
+	background-color: var(--odd-color);
 }
 
 .directoryGrid .personalvCard img {
-    display: block;
-    margin: 0 auto;
-    width: 120px;
-    height: 150px;
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	height: 150px;
 }
 
 .directoryGrid .personalvCard ul {
-    margin: 1em 0 1em 0!important;
-    list-style: none;
-    text-align: center;
-    margin-left: unset;
+	margin: 1em 0 1em 0 !important;
+	list-style: none;
+	text-align: center;
+	margin-left: unset;
 }
 
 .directoryGrid .personalvCard ul li {
-    font-size: 0.7em;
-    margin: 0 !important;
+	font-size: 0.7em;
+	margin: 0 !important;
 }
 
-.directoryGrid .personalvCard ul li.name,.directoryGrid .personalvCard ul li.assignedSchool {
-    font-size: 1em;
+.directoryGrid .personalvCard ul li.name,
+.directoryGrid .personalvCard ul li.assignedSchool {
+	font-size: 1em;
 }
+
 .directoryGrid .personalvCard ul li.cteName {
-    font-size:0.8em;
+	font-size: 0.8em;
 }
 
 /*
@@ -725,11 +736,12 @@ Department main styles
 --------------------------------------------------------------------
 */
 .grid404 {
-	display:grid;
+	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap:1em;
+	gap: 1em;
 	grid-template-areas: "results image";
 }
+
 #cludo-404 {
 	grid-area: results;
 }
@@ -741,6 +753,7 @@ Department main styles
 .powered-by {
 	display: none;
 }
+
 /*
 --------------------------------------------------------------------
 Sidebars
@@ -814,14 +827,17 @@ Sidebars
 	width: 100%;
 	height: 100%;
 }
+
 .sidebar .directoryGrid {
-    display: unset;
+	display: unset;
 	background-color: unset;
 }
-.sidebar .directoryGrid>*{
+
+.sidebar .directoryGrid>* {
 	background-color: unset;
-	width:100%
+	width: 100%
 }
+
 .sidebar .personalvCard {
 	clear: both;
 }
@@ -938,10 +954,12 @@ Sidebars
 	color: #223a59;
 	text-decoration: none;
 }
+
 #directorySearchIcon {
 	width: 30px;
 	margin-bottom: -10px;
 }
+
 /*
 -------------------------------------------------------------------------------------------------
 Typography
@@ -1303,6 +1321,7 @@ ul.imageList li,
 .content .imageListGrid li {
 	list-style: none !important;
 }
+
 blockquote {
 	font-size: 1em;
 	font-style: italic;
@@ -1536,9 +1555,11 @@ accordion styles .accordion as the control and a div beneath as the panel
 	content: "\2796";
 	/* Unicode character for "minus" sign (-) */
 }
+
 #mainHeader .active:after {
 	content: unset;
 }
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
 	max-height: 0;
@@ -1721,6 +1742,7 @@ Responsive styles
 	p#siteTitle {
 		left: 190px !important;
 	}
+
 	.districtLogo {
 		width: 20%;
 	}
@@ -1764,12 +1786,13 @@ Responsive styles
 		width: 100%;
 		min-height: unset;
 	}
+
 	.activePost #directorySearch,
 	.activePost #filter,
 	.activePost #directorySearchIcon {
 		display: inline-block;
 	}
-	
+
 	.sidebar #live-search {
 		display: none;
 	}
@@ -1948,56 +1971,68 @@ blockquote {
 	border-left: 10px solid #ccc;
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
-	quotes: "\201C""\201D";
-  }
-  blockquote:before {
+	quotes: "\201C" "\201D";
+}
+
+blockquote:before {
 	color: #ccc;
 	content: open-quote;
 	font-size: 4em;
 	line-height: 0.1em;
 	margin-right: 0.25em;
 	vertical-align: -0.4em;
-  }
-  blockquote p {
+}
+
+blockquote p {
 	display: inline;
 	font-style: italic;
-  }
+}
 
 
 
 
 
-  /* Skip nav link */
+/* Skip nav link */
 .skip-nav-link {
-    position: absolute;
-    transform: translateY(-300%);
-    padding: 1em;
-    top: -200px;
-    transition: transform 300ms ease-in;
+	position: absolute;
+	transform: translateY(-300%);
+	padding: 1em;
+	top: -200px;
+	transition: transform 300ms ease-in;
 }
 
 .skip-nav-link:focus {
-    transform: translateY(-165%);
-    z-index: 10001;
-    border: none;
-    top: 0px;
+	transform: translateY(-165%);
+	z-index: 10001;
+	border: none;
+	top: 0px;
 	position: static;
 }
 
 /* Featured image Styles for Single post */
 .featured-image-full {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 1000px;
-    padding-top: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 1000px;
+	padding-top: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 @media (min-width: 1400px) {
-    .featured-image-full {
-      padding-top: 0;
-      height: 500px;
-    }
-  }
+	.featured-image-full {
+		padding-top: 0;
+		height: 500px;
+	}
+}
+
+
+#trp-floater-ls-current-language .trp-ls-disabled-language img {
+	max-width: 25px;
+	max-width: 25px;
+}
+
+.trp-language-switcher-container.trp-floater-ls-names.trp-top-right.trp-color-dark {
+	min-width: 25px;
+}
