@@ -31,7 +31,7 @@
 			<li><a href="https://twitter.com/ProvoSchoolDist"><img src="//globalassets.provo.edu/image/icons/twitter.svg" alt="Link to Twitter" /></a></li>
 		</ul>
 	<h2>Public Relations Contacts</h2>
-		<?php echo file_get_contents('https://provo.edu/directory_page/administrative-building-communications-admin/'); ?>
-
-
+		<?php 
+			echo do_shortcode('[directory url="https://provo.edu/directory_page/administrative-building-communications-admin/"]');
+		?>
 </aside>

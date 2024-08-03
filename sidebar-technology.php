@@ -28,10 +28,7 @@
 	</ul>
 	<!-- <h2>Technology Contacts</h2> -->
 	<?php
-
-	echo file_get_contents('https://provo.edu/directory_page/tech-support-admin-sidebar/');
-	echo file_get_contents('https://provo.edu/directory_page/tech-support-staff-sidebar/');
-	//	echo '<h3>Field Technicians</h3>';
-	//  echo file_get_contents('https://provo.edu/directory_page/technology-field-tech/');	
+		echo do_shortcode('[directory url="https://provo.edu/directory_page/tech-support-admin-sidebar/"]');
+		echo do_shortcode('[directory url="https://provo.edu/directory_page/tech-support-staff-sidebar/"]');
 	?>
 </aside>

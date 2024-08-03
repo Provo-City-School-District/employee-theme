@@ -9,6 +9,7 @@
 	</ul>
 	<h2>Provo Way Innovative Learning Initiative Contacts</h2>
 		<?php  
-			echo file_get_contents('https://provo.edu/directory_page/leaning-initiative/');
+			echo do_shortcode('[directory url="https://provo.edu/directory_page/leaning-initiative/"]');
+
 		?>
 </aside>

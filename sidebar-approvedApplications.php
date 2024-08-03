@@ -97,6 +97,6 @@
 		</ul>
 	<h2>Data Privacy Contacts</h2>
 		<?php
-			echo file_get_contents('https://provo.edu/directory_page/administrative-building-student-data/');
+			echo do_shortcode('[directory url="https://provo.edu/directory_page/administrative-building-student-data/"]');
 		?>
 </aside>

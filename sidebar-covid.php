@@ -16,6 +16,6 @@
 	<p>Employee Assistance Program (EAP) Phone: 801-442-3509</p>
 	<h2>Coronavirus Disease 2019 Support</h2>
 		<?php  
-			echo file_get_contents('https://provo.edu/directory_page/employee-site-covid-support/');
+			echo do_shortcode('[directory url="https://provo.edu/directory_page/employee-site-covid-support/"]');
 		?>
 </aside>			
